@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Игорь Белов](https://up.htmlacademy.ru/adaptive/20/user/920149).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Пудов](https://up.htmlacademy.ru/htmlcss/28/user/216332).
 
 ---
 
