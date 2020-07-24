@@ -1,0 +1,22 @@
+
+$logo: #000000;
+
+$decoration-first: #62D1BA;
+$decoration-second: #46C1AE;
+
+$text-main: #444444;
+$text-first: #000000;
+$text-second: #ffffff;
+$text-third: $decoration-first;
+$text-placeholder: rgba($text-first, 0.3);
+
+$background-first: #ffffff;
+$background-second: #F1F1F1;
+$background-navigation-products1: $decoration-first;
+$background-navigation-products1-hover: #59D5BC;
+$background-navigation-products1-active: #59D5BC;
+$background-navigation-products2: #56C3B2;
+$background-navigation-products2-hover: $decoration-second;
+$background-navigation-products2-active: $decoration-second;
+
+$border: $text-main;

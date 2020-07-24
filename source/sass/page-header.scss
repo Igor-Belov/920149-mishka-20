@@ -1,0 +1,12 @@
+.page-header {
+  padding: 22px 30px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $text-first;
+  background-color: $background-first;
+}
+
+.page-header__logo path{
+fill: $logo;
+}

@@ -1,2 +1,21 @@
 // Начните писать стили здесь
-body { background: green; }
+@import "../sass/color.scss";
+@import "../sass/fonts.scss";
+@import "../sass/global.scss";
+@import "../sass/page.scss";
+@import "../sass/page-header.scss";
+@import "../sass/site-list.scss";
+
+@import "../sass/cart.scss";
+@import "../sass/search.scss";
+
+@import "../sass/navigation-products.scss";
+@import "../sass/product-button.scss";
+@import "../sass/product-card.scss";
+@import "../sass/product-of-week.scss";
+@import "../sass/title.scss";
+@import "../sass/button.scss";
+@import "../sass/about-us.scss";
+@import "../sass/about-us-fact.scss";
+
+
