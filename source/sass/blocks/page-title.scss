@@ -1,0 +1,4 @@
+.page-title {
+  @include font(bold, 27px, 30px, $text-first);
+  background-color: $background-second;
+}

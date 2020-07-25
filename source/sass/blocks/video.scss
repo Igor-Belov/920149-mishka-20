@@ -1,0 +1,7 @@
+.video__title {
+  @include font(bold, 17px, 24px, $text-first);
+}
+
+.video__text {
+  @include font(normal, 13px, 24px, $text-main);
+}

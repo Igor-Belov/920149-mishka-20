@@ -7,8 +7,5 @@ background-position: 0 0;
 }
 
 .navigation-products__title {
-  font-weight: bold;
-  font-size: 27px;
-  line-height: 30px;
-  color: $text-first;
+  @include font(bold, 27px, 30px, $text-first);
 }

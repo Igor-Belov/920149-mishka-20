@@ -1,0 +1,23 @@
+.product-item__link {
+  text-decoration: none;
+}
+
+.product-item__title {
+  @include font(bold, 17px, 24px, $text-first);
+}
+
+.product-item__discription {
+  @include font(normal, 13px, 30px, $text-main);
+}
+
+.product-item__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-item__price {
+  @include font(bold, 15px, 24px, $text-first);
+  &::after {
+    content: " руб.";
+  }
+}

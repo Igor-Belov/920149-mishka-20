@@ -1,9 +1,6 @@
 .page-header {
   padding: 22px 30px;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
-  color: $text-first;
+  @include font(bold, 17px, 24px, $text-first);
   background-color: $background-first;
 }
 

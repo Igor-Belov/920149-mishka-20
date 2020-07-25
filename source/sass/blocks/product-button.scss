@@ -1,0 +1,18 @@
+.product-button {
+  display: block;
+  @include font(bold, 19px, 24px, $text-second);
+  background-color: $background-navigation-products1;
+  &--style--dark {
+    background-color: $background-navigation-products2;
+  }
+}
+
+
+.navigation-products__list {
+@include list-reset;
+}
+
+.product-button__link {
+  text-decoration: none;
+  color: inherit;
+}

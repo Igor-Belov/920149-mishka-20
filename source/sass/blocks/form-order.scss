@@ -1,0 +1,31 @@
+.form-order__fieldset {
+  @include list-reset;
+  border: none;
+}
+
+.form-order__text {
+  @include font(normal, 13px, 24px, $text-main);
+}
+
+.form-order__legend {
+  display: flex;
+  gap: 18px;
+  width: 100%;
+  align-items: center;
+   @include font(bold, 17px, 16px, $text-third, uppercase);
+   &::after {
+     display: block;
+     flex-grow: 1;
+     height: 1px;
+     background-color: $decoration-first;
+     content: "";
+   }
+ }
+
+.form-order__list {
+   @include list-reset;
+ }
+
+.form-order__footnote {
+  @include font(normal, 14px, 16px, $text-main);
+}

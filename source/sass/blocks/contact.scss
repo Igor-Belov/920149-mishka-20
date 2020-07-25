@@ -1,0 +1,29 @@
+.contact__title {
+  @include font(bold, 18px, 30px, $text-first);
+}
+
+.contact__list {
+  @include list-reset;
+}
+
+.contact__name,
+.contact__definition {
+  @include font(normal, 15px, 30px, $text-main)
+}
+
+.contact__link {
+  text-transform: none;
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid $decoration-first;
+}
+
+.contact__map {
+  min-width: 322px;
+  min-height: 457px;
+  background-color: $background-second;
+  background-image: url(/source/img/map-mobile@1x.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,15 @@
+.product-card {
+  color: $text-main;
+}
+
+.product-card__description {
+  @include font(normal, 15px, 24px);
+}
+
+.product-card__table {
+  @include font(normal, 15px, 20px);
+}
+
+.product-card__price-block {
+  @include font(bold, 17px, 24px);
+}
