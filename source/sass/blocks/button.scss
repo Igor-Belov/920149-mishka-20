@@ -1,0 +1,15 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  min-width: 100px;
+  min-height: 52px;
+
+  @include font(bold, 17px, 20px, $text-main, uppercase);
+  font-family: "Open Sans", "Arial", sans-serif;
+  text-align: center;
+  background-color: $background-first;
+  border: 2px solid $border;
+  cursor: pointer;
+}

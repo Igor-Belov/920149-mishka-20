@@ -1,0 +1,4 @@
+.cart {
+  @include font(bold, 17px, 24px, $text-first);
+  text-decoration: none;
+}
