@@ -1,0 +1,41 @@
+.main-navigation {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $size-tablet) {
+    flex-direction: row;
+  }
+}
+
+.main-navigation__logo {
+  align-self: center;
+  justify-self: center;
+  height: 79px;
+
+  @media (min-width: $size-tablet) {
+    height: 89px;
+  }
+
+  @media (min-width: $size-decktop) {
+    height: 89px;
+    order: 1;
+  }
+}
+
+.main-navigation__toggle {
+  @media (min-width: $size-tablet) {
+    display: none;
+  }
+}
+
+.main-navigation__right-side {
+  @media (min-width: $size-decktop) {
+    order: 2;
+  }
+}
+
+
+.main-navigation__logo path {
+  fill: $logo;
+}

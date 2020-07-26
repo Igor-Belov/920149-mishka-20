@@ -1,4 +1,19 @@
-.site-list__link{
+.site-list {
+  @include list-reset;
+
+  @media (min-width: $size-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $size-tablet) and (max-width: $size-decktop) {
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+  }
+}
+
+.site-list__link {
   color: $text-first;
   text-decoration: none;
 }

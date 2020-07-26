@@ -3,13 +3,11 @@
 @import "fonts.scss";
 @import "global.scss";
 @import "mixins.scss";
-
 @import "blocks/page-header.scss";
 @import "blocks/site-list.scss";
-
 @import "blocks/cart.scss";
 @import "blocks/search.scss";
-
+@import "blocks/main-navigation.scss";
 @import "blocks/navigation-products.scss";
 @import "blocks/product-button.scss";
 @import "blocks/product-card.scss";
@@ -17,7 +15,6 @@
 @import "blocks/button.scss";
 @import "blocks/about-us.scss";
 @import "blocks/about-us-fact.scss";
-
 @import "blocks/button-add-cart.scss";
 @import "blocks/contact.scss";
 @import "blocks/copyright.scss";
@@ -38,6 +35,3 @@
 @import "blocks/tel-input.scss";
 @import "blocks/video.scss";
 @import "blocks/wishes-input.scss";
-
-
-

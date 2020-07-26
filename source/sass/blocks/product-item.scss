@@ -3,7 +3,7 @@
 }
 
 .product-item__title {
-  @include font(bold, 17px, 24px, $text-first);
+  @include title;
 }
 
 .product-item__discription {
@@ -17,6 +17,7 @@
 
 .product-item__price {
   @include font(bold, 15px, 24px, $text-first);
+
   &::after {
     content: " руб.";
   }

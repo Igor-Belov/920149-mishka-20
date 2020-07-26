@@ -1,7 +1,7 @@
 @mixin list-reset {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 @mixin font ($font-weight: inherit, $font-size: inherit, $line-height: inherit, $color: inherit, $text-transform: none) {
@@ -10,4 +10,11 @@
   line-height: $line-height;
   color: $color;
   text-transform: $text-transform;
+}
+
+@mixin title {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: $text-first;
 }

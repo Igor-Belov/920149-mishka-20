@@ -23,12 +23,12 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+
   &--forvard {
-    background-image: url(../img/icon-right-arrow.svg);
+    background-image: url("../img/icon-right-arrow.svg");
   }
+
   &--backward {
-    background-image: url(../img/icon-left-arrow.svg);
+    background-image: url("../img/icon-left-arrow.svg");
   }
 }
-
-
