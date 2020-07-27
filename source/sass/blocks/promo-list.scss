@@ -1,0 +1,12 @@
+.promo-list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 50%;
+}
+
+.promo-list__link {
+  @include font-nav-second;
+  text-decoration: none;
+}

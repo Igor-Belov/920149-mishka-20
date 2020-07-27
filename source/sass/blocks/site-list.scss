@@ -5,15 +5,13 @@
     display: flex;
     flex-wrap: wrap;
   }
-
-  @media (min-width: $size-tablet) and (max-width: $size-decktop) {
-    position: absolute;
-    left: 0;
-    bottom: -20px;
-  }
 }
 
 .site-list__link {
-  color: $text-first;
+  @include font-nav;
   text-decoration: none;
+
+  @media (min-width: $size-tablet) and (max-width: $size-decktop) {
+    @include font-nav-second;
+  }
 }
