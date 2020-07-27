@@ -1,9 +1,4 @@
 .page-header {
-  padding: 22px 30px;
   @include font(bold, 17px, 24px, $text-first);
   background-color: $background-first;
-}
-
-.page-header__logo path{
-fill: $logo;
 }

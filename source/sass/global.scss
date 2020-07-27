@@ -38,8 +38,33 @@ img {
 }
 
 .page__body {
+  min-width: 320px;
   min-height: 100%;
   margin: 0;
   background-color: $background-first;
   color: $text-first;
+}
+
+$size-mobile: 320px;
+$size-tablet: 708px;
+$size-decktop: 1090px;
+
+.wrapper {
+  width: $size-mobile;
+  margin: 0 auto;
+  padding: 0 30px;
+  outline: 1px solid red;
+  outline-offset: -1px;
+
+  @media (min-width: $size-tablet) {
+    width: $size-tablet;
+    padding: 0 20px;
+    outline: 1px solid blue;
+  }
+
+  @media (min-width: $size-decktop) {
+    width: $size-decktop;
+    padding: 0 20px;
+    outline: 1px solid green;
+  }
 }
