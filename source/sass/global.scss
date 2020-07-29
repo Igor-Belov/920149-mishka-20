@@ -45,26 +45,29 @@ img {
   color: $text-first;
 }
 
-$size-mobile: 320px;
+$size-min-mobile: 320px;
 $size-tablet: 708px;
-$size-decktop: 1090px;
+$size-mobile-only: $size-tablet - 1;
+$size-desktop: 1090px;
+$size-max-desktop: $size-desktop + 600;
 
 .wrapper {
-  width: $size-mobile;
+  min-width: $size-min-mobile;
   margin: 0 auto;
   padding: 0 30px;
   outline: 1px solid red;
   outline-offset: -1px;
 
   @media (min-width: $size-tablet) {
-    width: $size-tablet;
-    padding: 0 20px;
+    width: auto;
+    padding: 0 30px;
     outline: 1px solid blue;
   }
 
-  @media (min-width: $size-decktop) {
-    width: $size-decktop;
-    padding: 0 20px;
+  @media (min-width: $size-desktop) {
+    width: auto;
+    max-width: $size-max-desktop;
+    padding: 0 30px;
     outline: 1px solid green;
   }
 }

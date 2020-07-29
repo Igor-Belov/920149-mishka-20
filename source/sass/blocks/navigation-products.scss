@@ -1,11 +1,43 @@
 .navigation-products {
-  background-color: $background-second;
+  display: flex;
+  flex-direction: column;
+  background-color: $background-main-image;
   background-image: url("../img/hero-mobile@1x.jpg");
-  background-size: 100px 100px;
+  background-size: auto 100%;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center 0;
+  min-height: 489px;
+
+  @media(min-width: $size-tablet) {
+    min-height: 758px;
+    background-image: url("../img/hero-tablet@1x.jpg");
+  }
+
+  @media(min-width: $size-desktop) {
+    min-height: 758px;
+    background-image: url("../img/hero-desktop@1x.jpg");
+  }
 }
 
 .navigation-products__title {
+  margin: 0;
   @include font(bold, 27px, 30px, $text-first);
+}
+
+.navigation-products__list {
+  @include list-reset;
+  margin-top: auto;
+
+  @media(min-width: $size-tablet) {
+  display: flex;
+  }
+}
+
+.navigation-products__item {
+  min-height: 103px;
+  @media(min-width: $size-tablet) {
+    display: flex;
+    min-height: 119px;
+    width: 50%;
+  }
 }

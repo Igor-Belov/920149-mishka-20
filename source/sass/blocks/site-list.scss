@@ -11,7 +11,7 @@
   @include font-nav;
   text-decoration: none;
 
-  @media (min-width: $size-tablet) and (max-width: $size-decktop) {
+  @media (min-width: $size-tablet) and (max-width: $size-desktop) {
     @include font-nav-second;
   }
 }

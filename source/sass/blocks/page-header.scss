@@ -1,4 +1,9 @@
 .page-header {
-  @include font(bold, 17px, 24px, $text-first);
-  background-color: $background-first;
+  position: relative;
+  z-index: -2;
+  @include font-nav;
+  background-color: $background-main-image;
+  @media(max-width: $size-mobile-only) {
+    background-color: $background-first;
+  }
 }
