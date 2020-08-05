@@ -1,11 +1,29 @@
 .copyright {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+
+  @media (min-width: $size-tablet) {
+    justify-content: flex-end;
+  }
 }
 
 .copyright__text {
+  margin-right: 27px;
+
   @include font(bold, 19px, 18px, $text-first);
+}
+
+.copyright__link {
+  display: flex;
+
+  &:hover path,
+  &:focus path {
+    fill: $decoration-second;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
 }

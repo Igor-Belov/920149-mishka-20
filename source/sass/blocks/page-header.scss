@@ -1,9 +1,10 @@
 .page-header {
-  position: relative;
-  z-index: -2;
+  $height-background: 50px;
+  background-color: $background-first;
+
   @include font-nav;
-  background-color: $background-main-image;
-  @media(max-width: $size-mobile-only) {
-    background-color: $background-first;
+
+  @media (min-width: $size-tablet) {
+    background-image: linear-gradient(transparent $height-background, $background-main-image $height-background);
   }
 }

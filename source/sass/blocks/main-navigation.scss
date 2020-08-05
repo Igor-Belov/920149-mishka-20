@@ -1,5 +1,4 @@
 .main-navigation {
-
   @media (min-width: $size-tablet) {
     display: grid;
     grid-template-columns: min-content 1fr min-content min-content;
@@ -12,8 +11,6 @@
     grid-template-rows: min-content min-content;
   }
 }
-
-
 
 .main-navigation__logo {
   width: 86px;
@@ -84,16 +81,4 @@
   grid-row: 1/2;
   min-width: 314px;
   max-width: 500px;
-
-&::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  height: 50%;
-  width: 100%;
-  content: "";
-  background-color: $background-first;
-  z-index: -1;
-}
 }

@@ -8,8 +8,18 @@
 
   @include font(bold, 17px, 20px, $text-main, uppercase);
   font-family: "Open Sans", "Arial", sans-serif;
-  text-align: center;
   background-color: $background-first;
+  text-decoration: none;
   border: 2px solid $border;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $border;
+    color: $text-second;
+  }
+
+  &:active .button__text {
+    opacity: 0.3;
+  }
 }

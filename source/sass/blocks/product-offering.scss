@@ -1,0 +1,42 @@
+.product-offering {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-top: 31px;
+  padding-bottom: 31px;
+
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: -$padding-mobile;
+    width: calc(100% + 2 * 30px);
+    height: 6px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    content: "";
+
+    @media (min-width: $size-tablet) {
+      left: -$padding-tablet;
+      height: 17px;
+    }
+
+    @media (min-width: $size-desktop) {
+      left: 0;
+      height: 23px;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: $size-tablet) {
+    padding-top: 39px;
+    padding-bottom: 52px;
+  }
+
+  @media (min-width: $size-desktop) {
+    padding-top: 54px;
+    padding-bottom: 73px;
+  }
+}
