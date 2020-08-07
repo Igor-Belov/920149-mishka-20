@@ -21,6 +21,25 @@
   }
 }
 
+.navigation-products__title {
+  display: block;
+  width: 255px;
+  margin: 73px auto;
+  font-size: 27px;
+  text-align: center;
+
+  @include title;
+
+
+  @media (min-width: $size-tablet) {
+    width: 668px;
+  }
+
+  @media (min-width: $size-desktop) {
+    width: 700px;
+  }
+}
+
 .navigation-products__list {
   @include list-reset;
   height: 100%;
@@ -39,8 +58,7 @@
   min-height: 103px;
 
   @media (min-width: $size-tablet) {
-    display: flex;
-    min-height: 119px;
+    min-height: 131px;
     width: 50%;
   }
 }

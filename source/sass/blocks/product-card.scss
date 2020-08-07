@@ -12,7 +12,8 @@
   padding: 31px 0 36px 0;
 
   @media (min-width: $size-tablet) {
-    grid-template-columns: 25% 25% 25% 25%;
+    padding: 0;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
       "title title title type"
       "description description img img"
@@ -22,7 +23,7 @@
   }
 
   @media (min-width: $size-desktop) {
-    grid-template-columns: 17% 16% 17% 17% 16% 17%;
+    grid-template-columns: repeat(6, 1fr);
     grid-template-areas:
       "type . . img img img"
       ". description description img img img"
@@ -41,15 +42,15 @@
 
   @media (min-width: $size-tablet) {
     margin: 0;
+    margin-bottom: 38px;
     padding: 0;
-    margin-top: 39px;
     padding-right: 10px;
   }
 
   @media (min-width: $size-desktop) {
     margin: 0;
     padding: 0;
-    margin-top: 39px;
+    margin-top: 61px;
     padding-right: 10px;
     grid-column: 2/6;
     grid-row: 1/2;
@@ -62,6 +63,22 @@
   margin-bottom: 18px;
 
   @include font(bold, 17px, 20px, $text-third, uppercase);
+
+  @media (min-width: $size-tablet) {
+    justify-self: end;
+    width: 100px;
+    margin-right: 15px;
+    line-height: 17px;
+    text-align: center;
+  }
+
+  @media (min-width: $size-desktop) {
+    justify-self: start;
+    margin-top: 68px;
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-left: 15px;
+  }
 }
 
 .product-card__description {
@@ -69,6 +86,17 @@
   margin-bottom: 28px;
 
   @include font(normal, 15px, 24px);
+
+  @media (min-width: $size-tablet) {
+    width: 292px;
+    margin-bottom: 48px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $size-desktop) {
+    margin-bottom: 48px;
+  }
 }
 
 .product-card__table {
@@ -76,9 +104,19 @@
   margin-bottom: 28px;
 
   @include font(normal, 15px, 20px);
+
+  @media (min-width: $size-tablet) {
+    width: 292px;
+  }
+}
+
+.product-card__data {
+  border-bottom: 1px solid $border-button-slider;
+  padding: 12px 0;
 }
 
 .product-card__img {
+  display: flex;
   grid-area: img;
   margin: 0 auto;
   margin-bottom: 25px;
@@ -94,6 +132,8 @@
 
   @media (min-width: $size-tablet) {
     margin-bottom: 0;
+    justify-content: flex-end;
+    align-items: flex-end;
 
     & :nth-child(1) {
       display: none;
@@ -123,9 +163,19 @@
   text-align: center;
 
   @include font(bold, 17px, 24px);
+
+  @media (min-width: $size-tablet) {
+    width: 292px;
+    margin-bottom: 33px;
+    font-size: 20px;
+  }
 }
 
 .product-card__button {
   grid-area: button;
   align-self: end;
+
+  @media (min-width: $size-tablet) {
+    width: 292px;
+  }
 }

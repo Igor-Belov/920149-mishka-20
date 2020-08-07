@@ -55,7 +55,7 @@
 
     &::after {
       top: -20px;
-      left: -10%;
+      left: -25%;
       right: auto;
     }
   }
@@ -68,11 +68,11 @@
   @media (min-width: $size-tablet) and (max-width: $size-desktop - 1px) {
     display: flex;
     flex-wrap: wrap;
-
-    & :nth-child(2n-1) {
-      padding-right: 10px;
-    }
     margin-bottom: 49px;
+  }
+
+  @media (min-width: $size-desktop) {
+    padding-right: 23px;
   }
 }
 
@@ -86,12 +86,21 @@
 }
 
 .contact__name {
-  min-width: 90px;
+  min-width: 76px;
   margin: 0;
   padding: 0;
   padding-right: 10px;
 
   @include font(normal, 15px, 30px, $text-main);
+
+  @media (min-width: $size-tablet) {
+    min-width: 81px;
+    font-size: 17px;
+  }
+
+  @media (min-width: $size-desktop) {
+    min-width: 78px;
+  }
 }
 
 .contact__definition {
@@ -100,9 +109,19 @@
   padding: 0;
 
   @include font(normal, 15px, 30px, $text-main);
+
+  @media (min-width: $size-tablet) {
+    font-size: 17px;
+  }
+
+  @media (min-width: $size-tablet) and (max-width: $size-desktop) {
+    padding-right: 20px;
+  }
 }
 
+
 .contact__link {
+  padding-bottom: 3px;
   text-transform: none;
   text-decoration: none;
   color: inherit;

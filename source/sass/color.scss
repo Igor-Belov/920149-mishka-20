@@ -19,7 +19,8 @@ $background-navigation-products2: #56c3b2;
 $background-navigation-products2-hover: $decoration-second;
 $background-navigation-products2-active: $decoration-second;
 $background-main-image: #f9f9f9;
+$background-header-line: #ececec;
 $background-footer-line: #e5e5e5;
 
 $border: $text-main;
-$border-button-slider: #ececec;
+$border-button-slider: $background-header-line;

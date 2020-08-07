@@ -1,4 +1,16 @@
 .cart {
-  @include font-nav;
+  display: flex;
+  align-items: center;
   text-decoration: none;
+  min-height: 79px;
+
+  @include font-nav;
+
+  @media (min-width: $size-tablet) {
+    min-height: 89px;
+    width: 266px;
+    padding: 10px 0 10px 81px;
+  }
+
+  @include horizontal-line;
 }

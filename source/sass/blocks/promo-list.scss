@@ -3,7 +3,10 @@
 
   display: flex;
   flex-wrap: wrap;
-  max-width: 50%;
+
+  & :not(:last-child) {
+    padding-right: 56px;
+  }
 }
 
 .promo-list__link {

@@ -15,7 +15,7 @@
     &::after {
       position: absolute;
       top: 0;
-      left: 0;
+      left: - $padding-tablet;
       display: block;
       width: 350px;
       height: 457px;
