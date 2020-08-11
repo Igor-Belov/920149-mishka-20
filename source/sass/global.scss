@@ -31,6 +31,7 @@ img {
 }
 
 .page {
+  min-width: 320px;
   height: 100%;
   font-size: 18px;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -38,7 +39,6 @@ img {
 }
 
 .page__body {
-  min-width: 320px;
   min-height: 100%;
   margin: 0;
   background-color: $background-first;
@@ -57,19 +57,20 @@ $padding-desktop: 30px;
 
 .wrapper {
   min-width: $size-min-mobile;
+  width: 100%;
   margin: 0 auto;
   padding: 0 $padding-mobile;
   outline: 1px solid red;
   outline-offset: -1px;
 
   @media (min-width: $size-tablet) {
-    width: auto;
+    width: 100%;
     padding: 0 $padding-tablet;
     outline: 1px solid blue;
   }
 
   @media (min-width: $size-desktop) {
-    width: auto;
+    width: 100%;
     max-width: $size-max-desktop;
     padding: 0 $padding-desktop;
     outline: 1px solid green;

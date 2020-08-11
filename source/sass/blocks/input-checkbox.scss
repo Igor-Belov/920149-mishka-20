@@ -1,1 +1,32 @@
-//input
+.input-checkbox {
+  padding-bottom: 22px;
+  display: flex;
+
+  @media (min-width: $size-tablet) {
+    padding-right: 15px;
+    padding-bottom: 24px;
+  }
+}
+
+.input-checkbox__img {
+  display: block;
+  width: 38px;
+  height: 39px;
+  border: 2px solid $text-main;
+  flex-shrink: 0;
+
+  @media (min-width: $size-tablet) {
+    width: 54px;
+    height: 52px;
+  }
+}
+
+.input-checkbox__label {
+  padding-top: 10px;
+  padding-left: 23px;
+
+  @media (min-width: $size-tablet) {
+    padding-top: 14px;
+    padding-left: 28px;
+  }
+}

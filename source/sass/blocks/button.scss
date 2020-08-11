@@ -13,6 +13,10 @@
   border: 2px solid $border;
   cursor: pointer;
 
+  @media (min-width: $size-tablet) {
+    font-size: 17px;
+  }
+
   &:hover,
   &:focus {
     background-color: $border;

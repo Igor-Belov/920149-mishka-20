@@ -124,6 +124,7 @@
 
   & :nth-child(n) {
     display: none;
+    width: 100%;
   }
 
   & :nth-child(1) {
@@ -132,7 +133,6 @@
 
   @media (min-width: $size-tablet) {
     margin-bottom: 0;
-    justify-content: flex-end;
     align-items: flex-end;
 
     & :nth-child(1) {

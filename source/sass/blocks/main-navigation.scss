@@ -94,8 +94,10 @@
 }
 
 .main-navigation__search {
-  grid-column: -2/-3;
-  grid-row: 1/2;
+  @media (min-width: $size-tablet) {
+    grid-column: -2/-3;
+    grid-row: 1/2;
+  }
 
   @include horizontal-line;
 
@@ -106,6 +108,12 @@
 }
 
 .main-navigation__cart {
-  grid-column: -1/-2;
-  grid-row: 1/2;
+  position: relative;
+
+  @include horizontal-line;
+
+  @media (min-width: $size-tablet) {
+    grid-column: -1/-2;
+    grid-row: 1/2;
+  }
 }
