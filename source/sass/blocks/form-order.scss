@@ -31,7 +31,7 @@
   }
 
   @media (min-width: $size-desktop) {
-    grid-template-columns: calc(1 / 6 * 100%) 1fr;
+    grid-template-columns: calc(1 / 6 * 100%) calc(4 / 6 * 100%);
   }
 }
 
@@ -157,10 +157,6 @@
     @media (min-width: $size-tablet) {
       padding-top: 50px;
       padding-bottom: 26px;
-    }
-
-    @media (min-width: $size-desktop) {
-      margin-right: calc(1 / 6 * 100%);
     }
   }
 }
