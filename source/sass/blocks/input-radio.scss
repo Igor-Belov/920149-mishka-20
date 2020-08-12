@@ -1,1 +1,33 @@
-//input
+.input-radio {
+  padding-bottom: 18px;
+  display: flex;
+
+  @media (min-width: $size-tablet) {
+    padding-bottom: 24px;
+  }
+}
+
+.input-radio__img {
+  display: block;
+  width: 36px;
+  height: 38px;
+  margin-left: 2px;
+  border: 2px solid $text-main;
+  border-radius: 50%;
+  flex-shrink: 0;
+
+  @media (min-width: $size-tablet) {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+.input-radio__label {
+  padding-top: 10px;
+  padding-left: 20px;
+
+  @media (min-width: $size-tablet) {
+    padding-top: 14px;
+    padding-left: 28px;
+  }
+}

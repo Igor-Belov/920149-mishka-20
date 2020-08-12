@@ -1,0 +1,15 @@
+.promo-list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  & :not(:last-child) {
+    padding-right: 56px;
+  }
+}
+
+.promo-list__link {
+  @include font-nav-second;
+  text-decoration: none;
+}

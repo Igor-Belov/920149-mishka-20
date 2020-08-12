@@ -4,16 +4,38 @@
   @media (min-width: $size-tablet) {
     display: flex;
     flex-wrap: wrap;
+
+    & :not(:last-child) {
+      margin-right: 30px;
+    }
   }
 
-  @media (min-width: $size-tablet) and (max-width: $size-decktop) {
-    position: absolute;
-    left: 0;
-    bottom: -20px;
+  @media (min-width: $size-desktop) {
+    & :not(:last-child) {
+      margin-right: 30px;
+      padding-right: 30px;
+      border-right: 1px solid rgba($logo, 0.1);
+    }
+  }
+}
+
+.site-list__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @include horizontal-line;
+
+  @media (max-width: $size-mobile-only) {
+    min-height: 79px;
   }
 }
 
 .site-list__link {
-  color: $text-first;
+  @include font-nav;
   text-decoration: none;
+
+  @media (min-width: $size-tablet) and (max-width: $size-desktop - 1px) {
+    @include font-nav-second;
+  }
 }

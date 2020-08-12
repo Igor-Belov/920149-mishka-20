@@ -1,4 +1,10 @@
 .page-header {
-  @include font(bold, 17px, 24px, $text-first);
+  $height-background: 88px;
   background-color: $background-first;
+
+  @include font-nav;
+
+  @media (min-width: $size-tablet) {
+    background-image: linear-gradient(transparent $height-background, rgba($logo, 0.1), $background-second $height-background + 1px);
+  }
 }

@@ -1,4 +1,31 @@
 .page-title {
-  @include font(bold, 27px, 30px, $text-first);
+  margin: 0;
   background-color: $background-second;
+  text-align: center;
+  min-height: 177px;
+  padding-top: 73px;
+  padding-bottom: 70px;
+
+  @media (min-width: $size-tablet) {
+    min-height: 226px;
+    padding-top: 57px;
+    padding-bottom: 70px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-position: center bottom;
+    background-size: auto 24px;
+    background-repeat: repeat-x;
+  }
+
+  @media (min-width: $size-desktop) {
+    min-height: 238px;
+    padding-top: 57px;
+    padding-bottom: 70px;
+    background-size: auto 34px;
+  }
+}
+
+.page-title__text {
+  @include title;
+  margin: 0;
+  padding: 0;
 }

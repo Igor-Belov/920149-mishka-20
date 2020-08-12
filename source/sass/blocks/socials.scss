@@ -7,5 +7,16 @@
 }
 
 .socials__item {
-  padding: 20px;
+  padding: 0 20px;
+}
+
+.socials__link {
+  &:hover path,
+  &:focus path {
+    fill: $decoration-second;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
 }

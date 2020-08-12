@@ -1,1 +1,28 @@
-//main
+.page-main {
+  background-color: inherit;
+}
+
+.page-main__stretch-background {
+  position: relative;
+  background-color: $background-main-image;
+
+  @media (min-width: $size-tablet) {
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: contain;
+      background-repeat: repeat-x;
+      background-position: center bottom;
+      content: "";
+
+      @media (min-width: $size-desktop) {
+        height: 34px;
+      }
+    }
+  }
+}

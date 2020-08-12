@@ -17,4 +17,43 @@
   font-size: 25px;
   line-height: 30px;
   color: $text-first;
+
+  @media (min-width: $size-tablet) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $size-desktop) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+@mixin font-nav {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $text-first;
+}
+
+@mixin font-nav-second {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+  color: $text-first;
+}
+
+@mixin horizontal-line {
+  @media (max-width: $size-mobile-only) {
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: -$padding-mobile;
+      display: block;
+      width: calc(100% + 2 * 30px);
+      height: 1px;
+      background-color: $background-header-line;
+      content: "";
+    }
+  }
 }

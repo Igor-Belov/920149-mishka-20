@@ -1,20 +1,29 @@
 .product-button {
-  display: block;
+  display: flex;
+  padding: 24px 30px 24px 30px;
   background-color: $background-navigation-products1;
-
-  @include font(bold, 19px, 24px, $text-second);
 
   &--style--dark {
     background-color: $background-navigation-products2;
   }
-}
 
-
-.navigation-products__list {
-  @include list-reset;
+  @media (min-width: $size-tablet) {
+    padding: 25px 10px 25px 36px;
+  }
 }
 
 .product-button__link {
   text-decoration: none;
   color: inherit;
+}
+
+.product-button__text {
+  display: block;
+  width: 130px;
+
+  @include font(bold, 19px, 24px, $text-second);
+
+  @media (min-width: $size-tablet) {
+    @include font(bold, 20px, 30px, $text-second);
+  }
 }

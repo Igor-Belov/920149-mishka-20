@@ -1,4 +1,30 @@
+.email-input {
+  width: 100%;
+  padding-bottom: 34px;
+
+  @media (min-width: $size-tablet) {
+    padding-top: 0;
+    padding-bottom: 24px;
+  }
+}
+
 .email-input__input {
+  width: 100%;
+  height: 52px;
+  border: none;
+  box-shadow: inset 0 -2px 0 $text-first;
+  background-color: inherit;
+}
+
+.email-input__input::placeholder {
   @include font(normal, 17px, 18px, $text-placeholder);
   font-family: "Open Sans", "Arial", sans-serif;
+
+  @media (min-width: $size-tablet) {
+    font-size: 19px;
+  }
+
+  @media (min-width: $size-desktop) {
+    color: $text-first;
+  }
 }

@@ -1,3 +1,31 @@
+.protucts-catalog {
+  $width-card: 33%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media (min-width: $size-tablet) {
+    padding-top: 67px;
+    padding-bottom: 53px;
+  }
+
+  @media (min-width: $size-desktop) {
+    padding-top: 111px;
+    padding-bottom: 56px;
+  }
+}
+
 .protucts-catalog__list {
   @include list-reset;
+  display: grid;
+  gap: 30px;
+
+  @media (min-width: $size-tablet) {
+    gap: 53px;
+  }
+
+  @media (min-width: $size-desktop) {
+    grid-template-columns: repeat(auto-fit, minmax(316px, 1fr));
+    gap: 51px;
+    margin-bottom: 0;
+  }
 }
