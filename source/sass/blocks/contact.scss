@@ -153,6 +153,7 @@
     content: "";
 
     @media (min-width: $size-tablet) {
+      width: calc(100% + 2 * 50px);
       left: -$padding-tablet;
     }
 

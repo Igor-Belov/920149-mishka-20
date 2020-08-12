@@ -24,6 +24,7 @@
   line-height: 0;
   text-decoration: none;
   overflow: hidden;
+  flex-shrink: 0;
 
   @media (min-width: $size-tablet) {
     width: 50%;

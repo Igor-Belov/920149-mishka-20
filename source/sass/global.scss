@@ -6,6 +6,9 @@
 
 html {
   box-sizing: border-box;
+  overflow: auto;
+  margin-right: calc((100% - 100vw) / 2);
+  margin-left: calc((100% - 100vw) / 2);
 }
 
 .content-box-component {
@@ -46,33 +49,31 @@ img {
 }
 
 $size-min-mobile: 320px;
-$size-tablet: 728px;
+$size-tablet: 768px;
 $size-mobile-only: $size-tablet - 1;
-$size-desktop: 1090px;
-$size-max-desktop: $size-desktop + 600;
+$size-desktop: 1150px;
+$size-max-desktop: $size-desktop + 600px;
 
 $padding-mobile: 30px;
-$padding-tablet: 30px;
-$padding-desktop: 30px;
+$padding-tablet: 50px;
+$padding-desktop: 50px;
 
 .wrapper {
   min-width: $size-min-mobile;
   width: 100%;
   margin: 0 auto;
   padding: 0 $padding-mobile;
-  outline: 1px solid red;
-  outline-offset: -1px;
 
   @media (min-width: $size-tablet) {
     width: 100%;
     padding: 0 $padding-tablet;
-    outline: 1px solid blue;
   }
 
   @media (min-width: $size-desktop) {
     width: 100%;
     max-width: $size-max-desktop;
     padding: 0 $padding-desktop;
-    outline: 1px solid green;
+
   }
 }
+

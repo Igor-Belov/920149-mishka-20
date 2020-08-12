@@ -6,6 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>Магазин вязанных вещей «Мишка»</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    html {
+      background: url("../img/Mobile-form.png") center 0 no-repeat;
+    }
+
+    @media (min-width: 768px) {
+      html {
+        background-image: url("../img/Tablet-form.png");
+      }
+    }
+
+    @media (min-width: 1150px) {
+      html {
+        background-image: url("../img/Desktop-form.png");
+      }
+    }
+
+    body {
+      opacity: 0.5;
+    }
+  </style>
+
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script src="../node_modules/pixel-glass/script.js"></script>
 </head>
 
 <body class="page__body">

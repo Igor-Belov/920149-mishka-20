@@ -25,7 +25,7 @@
 
   @media (min-width: $size-desktop) {
     grid-template-columns: repeat(auto-fit, minmax(316px, 1fr));
-    gap: 50px;
+    gap: 51px;
     margin-bottom: 0;
   }
 }

@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
+  <style></style>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>Магазин вязанных вещей «Мишка»</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    html {
+      background: url("../img/Mobile-index.png") center 0 no-repeat;
+    }
+
+    @media (min-width: 768px) {
+      html {
+        background-image: url("../img/Tablet-index.png");
+      }
+    }
+
+    @media (min-width: 1150px) {
+      html {
+        background-image: url("../img/Desktop-index.png");
+      }
+    }
+
+    body {
+      opacity: 0.5;
+    }
+  </style>
+
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script src="../node_modules/pixel-glass/script.js"></script>
 </head>
 
 <body class="page__body">

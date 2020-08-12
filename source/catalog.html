@@ -6,6 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>Магазин вязанных вещей «Мишка»</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    html {
+      background: url("../img/Mobile-catalog.png") center 0 no-repeat;
+    }
+
+    @media (min-width: 768px) {
+      html {
+        background-image: url("../img/Tablet-catalog.png");
+      }
+    }
+
+    @media (min-width: 1150px) {
+      html {
+        background-image: url("../img/Desktop-catalog.png");
+      }
+    }
+
+    body {
+      opacity: 0.5;
+    }
+  </style>
+
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script src="../node_modules/pixel-glass/script.js"></script>
 </head>
 
 <body class="page__body">
@@ -72,7 +97,7 @@
         </form>
         <a class="cart main-navigation__cart" href="#">
           <span class="cart__img"></span>
-          Корзина:&nbsp
+          Корзина:&#32;
           <span class="cart__info">пока пуста</span>
         </a>
       </nav>
@@ -90,7 +115,8 @@
         <ul class="protucts-catalog__list">
           <li class="protucts-catalog__item product-item">
             <a class="product-item__img-box" href="#">
-              <img class="product-item__img" src="img/photo-hare-mobile@1x.jpg" width="260" height="195">
+              <img class="product-item__img" src="img/photo-hare-mobile@1x.jpg" width="260" height="195"
+                alt="фото игрушки Зайчик-попрыгайчик">
             </a>
             <div class="product-item__text-block">
               <a class="product-item__link" href="#">
@@ -112,7 +138,8 @@
           </li>
           <li class="protucts-catalog__item product-item">
             <a class="product-item__img-box" href="#">
-              <img class="product-item__img" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195">
+              <img class="product-item__img" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195"
+                alt="фото корзины для белья">
             </a>
             <div class="product-item__text-block">
               <a class="product-item__link" href="#">
@@ -134,11 +161,12 @@
           </li>
           <li class="protucts-catalog__item product-item">
             <a class="product-item__img-box" href="#">
-              <img class="product-item__img" src="img/photo-toys-mobile@1x.jpg" width="260" height="195">
+              <img class="product-item__img" src="img/photo-toys-mobile@1x.jpg" width="260" height="195"
+                alt="фото корзинки для игрушек">
             </a>
             <div class="product-item__text-block">
               <a class="product-item__link" href="#">
-                <h2 class="product-item__title">Корзинка для&nbsp;белья</h2>
+                <h2 class="product-item__title">Большая корзинка для&nbsp;игрушек</h2>
               </a>
               <p class="product-item__discription">Диаметр 30&nbsp;см, высота 30&nbsp;см</p>
               <div class="product-item__bottom">
@@ -158,15 +186,17 @@
       </div>
     </section>
     <div class="wrapper">
-    <aside class="video">
+      <aside class="video">
         <span class="video__icon"></span>
         <h2 class="video__title">Процесс производства</h2>
-        <video class="video__video" width="260" height="150" poster="img/video-mobile@1x.jpg">
-          <source src="#">
-        </video>
+        <div class="video__box">
+          <video class="video__video" width="260" height="150" poster="img/video-mobile@1x.jpg">
+            <source src="#">
+          </video>
+          <button class="video__button-play" type="button"></button>
+        </div>
         <p class="video__text">По просьбам наших любимых фолловеров мы сняли для&nbsp;вас подробное видео о&nbsp;том,
-          как
-          появляются наши товары.</p>
+          как появляются наши товары.</p>
         <button class="video__button button" type="button">
           <span class="button__text">Сделать заказ</span>
         </button>
@@ -178,7 +208,7 @@
     <div class="wrapper page-footer__wrapper">
       <div class="page-footer__box-logo-second">
         <a class="page-footer__link-logo-second">
-          <svg class="page-footer__img-logo-second" version=" 1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+          <svg class="page-footer__img-logo-second" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="102px" height="34px"
             viewBox="0 0 101.615 34.056" enable-background="new 0 0 101.615 34.056" xml:space="preserve">
             <g>
