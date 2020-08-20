@@ -9,7 +9,6 @@
     "price-block"
     "button";
   color: $text-main;
-  padding: 31px 0 36px 0;
 
   @media (min-width: $size-tablet) {
     padding: 0;
@@ -49,8 +48,9 @@
 
   @media (min-width: $size-desktop) {
     margin: 0;
-    padding: 0;
     margin-top: 61px;
+    margin-bottom: 32px;
+    padding: 0;
     padding-right: 10px;
     grid-column: 2/6;
     grid-row: 1/2;
@@ -60,7 +60,7 @@
 
 .product-card__type {
   grid-area: type;
-  margin-bottom: 18px;
+  margin-bottom: 17px;
 
   @include font(bold, 17px, 20px, $text-third, uppercase);
 
@@ -68,6 +68,7 @@
     justify-self: end;
     width: 100px;
     margin-right: 15px;
+    margin-top: 8px;
     line-height: 17px;
     text-align: center;
   }
@@ -75,44 +76,60 @@
   @media (min-width: $size-desktop) {
     justify-self: start;
     margin-top: 68px;
-    margin-right: 0;
+    margin-right: 10px;
     margin-bottom: 10px;
-    margin-left: 15px;
+    margin-left: 0;
+    justify-self: center;
   }
 }
 
 .product-card__description {
   grid-area: description;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 
   @include font(normal, 15px, 24px);
 
   @media (min-width: $size-tablet) {
     width: 292px;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
     font-size: 17px;
     line-height: 30px;
   }
 
   @media (min-width: $size-desktop) {
-    margin-bottom: 48px;
+    margin-bottom: 54px;
   }
 }
 
 .product-card__table {
   grid-area: table;
   margin-bottom: 28px;
+  margin-left: -2px;
 
   @include font(normal, 15px, 20px);
 
   @media (min-width: $size-tablet) {
     width: 292px;
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: $size-desktop) {
+    margin-bottom: 109px;
   }
 }
 
 .product-card__data {
+  padding-top: 5px;
+  padding-bottom: 12px;
   border-bottom: 1px solid $border-button-slider;
-  padding: 12px 0;
+
+  &:first-child {
+    width: 37%;
+
+    @media (min-width: $size-tablet) {
+      width: 33%;
+    }
+  }
 }
 
 .product-card__img {
@@ -159,14 +176,15 @@
 
 .product-card__price-block {
   grid-area: price-block;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   text-align: center;
 
   @include font(bold, 17px, 24px);
 
   @media (min-width: $size-tablet) {
     width: 292px;
-    margin-bottom: 33px;
+    margin-bottom: 32px;
+    padding-right: 5px;
     font-size: 20px;
   }
 }

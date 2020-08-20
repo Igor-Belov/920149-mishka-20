@@ -1,16 +1,16 @@
 .about-us {
   padding-top: 31px;
-  padding-bottom: 58px;
+  padding-bottom: 27px;
 
   @media (min-width: $size-tablet) {
     padding-top: 55px;
-    padding-bottom: 83px;
+    padding-bottom: 25px;
   }
 
   @media (min-width: $size-desktop) {
     padding-top: 68px;
     padding-right: 16.66%;
-    padding-bottom: 90px;
+    padding-bottom: 30px;
     padding-left: 16.66%;
   }
 }
@@ -62,11 +62,16 @@
 }
 
 .about-us__item {
-  padding-right: 15px;
+  padding-right: 10px;
   margin-bottom: 30px;
 
   @media (min-width: $size-tablet) {
     width: 50%;
     margin-bottom: 57px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $size-desktop) {
+    padding-right: 56px;
   }
 }

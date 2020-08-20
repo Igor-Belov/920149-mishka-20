@@ -10,7 +10,7 @@
   @media (min-width: $size-tablet) {
     grid-template-rows: min-content 96px;
     padding-bottom: 46px;
-    margin-bottom: 64px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $size-desktop) {
@@ -20,17 +20,50 @@
     padding-bottom: 0;
     margin-bottom: 105px;
   }
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:hover .video__box{
+    box-shadow: 10px 0 0 0 white, -10px 0 0 0 white;
+
+    @media (min-width: $size-tablet) {
+      box-shadow:  0 -10px 0 10px white;
+    }
+
+    @media (min-width: $size-desktop) {
+      box-shadow: -10px 0 0 10px white;
+    }
+  }
+
+  &:active {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .video__icon {
   display: block;
   width: 32px;
-  height: 22px;
+  height: 32px;
+  margin-left: 5px;
+  margin-top: -5px;
   justify-self: center;
-  background-color: red;
+  background-image: url("../img/icon-video.svg");
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $size-tablet) {
+    margin-top: 5px;
+    margin-left: 22px;
+  }
 
   @media (min-width: $size-desktop) {
     justify-self: start;
+    align-self: center;
+    margin-top: 30px;
+    margin-left: 0px;
   }
 }
 
@@ -39,34 +72,47 @@
   margin: 0;
   padding: 15px 0;
   align-self: center;
+  margin-top: -4px;
 
   @include font(bold, 17px, 24px, $text-first);
 
   @media (min-width: $size-tablet) {
     font-size: 20px;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+
+  @media (min-width: $size-tablet) {
+    margin-top: 0;
+    margin-left: 0;
   }
 }
 
 .video__box {
   position: relative;
   width: 100%;
-  height: 100%;
+  padding-top: calc(100% * 150 / 260);
   grid-column: 1 / -1;
-  margin-bottom: 35px;
+  margin-bottom: 22px;
   background-color: $background-second;
 
   @media (min-width: $size-tablet) {
     grid-row: 1 / 2;
     margin-bottom: 0;
+    padding-top: calc(100% * 455 / 668);
   }
 
   @media (min-width: $size-desktop) {
     grid-column: 1 / 2;
     grid-row: 1 / -1;
+    padding-top: calc(100% * 455 / 683);
   }
 }
 
 .video__video {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: block;
   width: 100%;
   height: 100%;
@@ -106,22 +152,26 @@
 
 .video__text {
   grid-column: 1 / -1;
-  padding: 0 24px;
+  padding: 0 32px;
   margin-bottom: 41px;
 
   @include font(normal, 13px, 24px, $text-main);
 
   @media (min-width: $size-tablet) {
-    padding: 0 29px;
+    align-self: start;
     margin-bottom: 41px;
+    margin-top: -6px;
+    padding: 0 29px;
+    padding-left: 39px;
     font-size: 15px;
     line-height: 30px;
   }
 
   @media (min-width: $size-desktop) {
     grid-column: 2 / 3;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 0;
-    margin-bottom: 51px;
   }
 }
 

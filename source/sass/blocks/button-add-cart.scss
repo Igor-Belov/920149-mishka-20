@@ -1,1 +1,14 @@
-//кнопки
+.button-add-cart {
+  width: 20px;
+  height: 19px;
+
+  &:hover path,
+  &:focus path {
+    opacity: 1;
+    fill: $decoration-first;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
+}

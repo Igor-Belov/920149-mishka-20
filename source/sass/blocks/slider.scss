@@ -14,6 +14,15 @@
   background-color: $background-first;
   border: 1px solid $border-button-slider;
   cursor: pointer;
+
+  &:hover .slider__button-img,
+  &:focus .slider__button-img {
+    opacity: 0.6;
+  }
+
+  &:active .slider__button-img {
+    opacity: 0.3;
+  }
 }
 
 .slider__button-img {
@@ -22,7 +31,7 @@
   height: 26px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
 
   &--forvard {
     background-image: url("../img/icon-right-arrow.svg");

@@ -7,7 +7,8 @@
 html {
   box-sizing: border-box;
   overflow: auto;
-  margin-right: calc((100% - 100vw) / 2);
+  overflow-x: hidden;
+  margin-right: calc((100% - 100vw) /  2);
   margin-left: calc((100% - 100vw) / 2);
 }
 
@@ -43,6 +44,7 @@ img {
 
 .page__body {
   min-height: 100%;
+  max-width: 100%;
   margin: 0;
   background-color: $background-first;
   color: $text-first;

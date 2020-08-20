@@ -7,17 +7,17 @@
   padding-bottom: 70px;
 
   @media (min-width: $size-tablet) {
-    min-height: 226px;
+    min-height: 192px;
     padding-top: 57px;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-position: center bottom;
-    background-size: auto 24px;
+    background-size: 768px 24px;
     background-repeat: repeat-x;
   }
 
   @media (min-width: $size-desktop) {
-    min-height: 238px;
+    min-height: 227px;
     padding-top: 57px;
     padding-bottom: 70px;
     background-size: auto 34px;
@@ -28,4 +28,8 @@
   @include title;
   margin: 0;
   padding: 0;
+
+  @media (max-width: $size-mobile-only) {
+    font-size: 27px;
+  }
 }

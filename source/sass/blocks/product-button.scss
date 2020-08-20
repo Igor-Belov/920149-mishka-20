@@ -1,20 +1,58 @@
 .product-button {
   display: flex;
-  padding: 24px 30px 24px 30px;
-  background-color: $background-navigation-products1;
-
-  &--style--dark {
-    background-color: $background-navigation-products2;
-  }
-
-  @media (min-width: $size-tablet) {
-    padding: 25px 10px 25px 36px;
-  }
+  align-items: stretch;
 }
 
 .product-button__link {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 24px 30px 15px 30px;
   text-decoration: none;
   color: inherit;
+  background-color: $background-navigation-products1;
+
+  &:hover,
+  &:focus {
+    background-color: $background-navigation-products1-hover;
+    position: relative;
+    bottom: 5px;
+    box-shadow: 0px 5px 0px 0px $background-navigation-products1-hover;
+
+  }
+
+  &:active {
+    background-color: $background-navigation-products1-active;
+    box-shadow: 0px 5px 0px 0px $background-navigation-products1-active;
+  }
+
+  &:hover .product-button__img,
+  &:focus .product-button__img {
+    opacity: 0.7;
+  }
+
+  &:active .product-button__img {
+    opacity: 0.3;
+  }
+
+  &--style--dark {
+    background-color: $background-navigation-products2;
+
+    &:hover,
+    &:focus {
+      background-color: $background-navigation-products2-hover;
+      box-shadow: 0px 5px 0px 0px $background-navigation-products2-hover;
+    }
+
+    &:active {
+      background-color: $background-navigation-products2-active;
+      box-shadow: 0px 5px 0px 0px $background-navigation-products2-active;
+    }
+  }
+
+  @media (min-width: $size-tablet) {
+    padding: 25px 10px 10px 36px;
+  }
 }
 
 .product-button__text {
@@ -25,5 +63,41 @@
 
   @media (min-width: $size-tablet) {
     @include font(bold, 20px, 30px, $text-second);
+  }
+}
+
+.product-button__img {
+  opacity: 0.5;
+
+  &--thing {
+    display: block;
+    width: 40px;
+    height: 62px;
+    margin-right: 6px;
+    background-image: url("../img/icon-interior.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $size-tablet) {
+      margin-top: 6px;
+      margin-right: 26px;
+    }
+  }
+
+  &--toy {
+    width: 60px;
+    height: 60px;
+    margin-top: 0px;
+    margin-right: -3px;
+    background-image: url("../img/icon-toy.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $size-tablet) {
+      margin-top: 8px;
+      margin-right: 24px;
+    }
   }
 }

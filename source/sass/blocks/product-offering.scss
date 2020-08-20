@@ -1,10 +1,7 @@
 .product-offering {
   position: relative;
   margin: 0;
-  padding: 0;
-  padding-top: 31px;
-  padding-bottom: 31px;
-
+  padding: 31px 0 42px 0;
 
   &::before {
     position: absolute;
@@ -13,31 +10,33 @@
     width: calc(100% + 2 * 30px);
     height: 6px;
     background-image: url("../img/bg-zigzag-line.svg");
-    background-size: contain;
+    background-size: 320px 7px;
     background-repeat: repeat-x;
-    background-position: center bottom;
+    background-position: center;
     content: "";
 
     @media (min-width: $size-tablet) {
       width: calc(100% + 2 * 50px);
       left: -$padding-tablet;
       height: 17px;
+      background-size: 768px 17px;
     }
 
     @media (min-width: $size-desktop) {
       left: 0;
       height: 23px;
       width: 100%;
+      background-size: 1050px 24px;
     }
   }
 
   @media (min-width: $size-tablet) {
-    padding-top: 39px;
-    padding-bottom: 52px;
+    padding-top: 41px;
+    padding-bottom: 68px;
   }
 
   @media (min-width: $size-desktop) {
     padding-top: 54px;
-    padding-bottom: 73px;
+    padding-bottom: 95px;
   }
 }
