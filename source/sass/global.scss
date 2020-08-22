@@ -67,12 +67,12 @@ $padding-desktop: 50px;
   padding: 0 $padding-mobile;
 
   @media (min-width: $size-tablet) {
-    width: 100%;
+    width: 768px;
     padding: 0 $padding-tablet;
   }
 
   @media (min-width: $size-desktop) {
-    width: 100%;
+    width: 1150px;
     max-width: $size-max-desktop;
     padding: 0 $padding-desktop;
 

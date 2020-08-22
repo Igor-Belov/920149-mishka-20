@@ -1,8 +1,11 @@
 .site-list {
   @include list-reset;
 
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $size-tablet) {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 
     & :not(:last-child) {
@@ -33,8 +36,9 @@
 
 .site-list__link {
   @include font-nav;
+  width: 100%;
   text-decoration: none;
-  margin-left: 46px;
+  padding-left: 46px;
 
   &:hover,
   &:focus {
@@ -45,12 +49,17 @@
     opacity: 0.3;
   }
 
+  @media (min-width: $size-min-mobile + 100px) and (max-width: $size-mobile-only) {
+    padding-left: 0;
+    text-align: center;
+  }
+
   @media (min-width: $size-tablet) and (max-width: $size-desktop - 1px) {
     @include font-nav-second;
-    margin-left: 0px;
+    padding-left: 0;
   }
 
   @media (min-width: $size-desktop) {
-    margin-left: 0px;
+    padding-left: 0;
   }
 }

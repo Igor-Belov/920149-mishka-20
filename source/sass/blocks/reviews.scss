@@ -131,7 +131,7 @@
     @include font(bold, 18px, 24px, $text-first);
   }
 
-  @media (min-width: $size-tablet) {
+  @media (min-width: $size-desktop) {
     @include font(bold, 17px, 24px, $text-first);
   }
 }

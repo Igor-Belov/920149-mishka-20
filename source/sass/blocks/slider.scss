@@ -40,4 +40,8 @@
   &--backward {
     background-image: url("../img/icon-left-arrow.svg");
   }
+
+  @media (min-width: $size-desktop) {
+    margin-top: -11px;
+  }
 }

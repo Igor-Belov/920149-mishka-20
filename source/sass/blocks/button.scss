@@ -26,4 +26,10 @@
   &:active .button__text {
     opacity: 0.3;
   }
+
+  &--popup {
+    @include font(bold, 17px, 16px, $text-second, uppercase);
+    background-color: $decoration-first;
+    border: none;
+  }
 }

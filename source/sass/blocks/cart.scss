@@ -19,6 +19,11 @@
     opacity: 0.3;
   }
 
+  @media (min-width: $size-min-mobile + 100px) and (max-width: $size-mobile-only) {
+    justify-content: center;
+    margin-right: 44px;
+  }
+
   @media (min-width: $size-tablet) {
     justify-content: flex-end;
     min-height: 89px;
