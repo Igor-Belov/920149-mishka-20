@@ -110,8 +110,9 @@
   @include font(normal, 15px, 30px, $text-main);
 
   @media (min-width: $size-tablet) {
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 58px;
+
     @include font(normal, 17px, 30px, $text-main);
   }
 
@@ -168,6 +169,6 @@
   }
 
   @media (min-width: $size-desktop) {
-  margin-top: 4px;
+    margin-top: 4px;
   }
 }

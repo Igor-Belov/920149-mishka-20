@@ -1,10 +1,11 @@
 .email-input {
+  position: relative;
   width: 100%;
-  padding-bottom: 34px;
+  margin-bottom: 34px;
 
   @media (min-width: $size-tablet) {
     padding-top: 0;
-    padding-bottom: 24px;
+    margin-bottom: 50px;
   }
 }
 
@@ -14,6 +15,26 @@
   border: none;
   box-shadow: inset 0 -2px 0 $text-first;
   background-color: inherit;
+
+  @include font(normal, 19px, 18px, $text-main);
+  font-family: "Open Sans", "Arial", sans-serif;
+
+  @media (min-width: $size-tablet) {
+    padding-bottom: 5px;
+    padding-left: 17px;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: inset 0 -2px 0 $decoration-first;
+  }
+
+  &:hover ~ .email-input__img path,
+  &:focus ~ .email-input__img path {
+    fill: $decoration-first;
+    opacity: 1;
+  }
 }
 
 .email-input__input::placeholder {
@@ -26,5 +47,20 @@
 
   @media (min-width: $size-desktop) {
     color: $text-first;
+  }
+}
+
+.email-input__img {
+  position: absolute;
+  bottom: 16px;
+  right: 3px;
+
+  @media (min-width: $size-tablet) {
+    bottom: 15px;
+    right: 22px;
+  }
+
+  @media (min-width: $size-desktop) {
+    right: 4px;
   }
 }

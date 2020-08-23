@@ -3,6 +3,7 @@
   align-items: center;
   text-decoration: none;
   min-height: 79px;
+  width: 100%;
 
   &:hover path,
   &:focus path {
@@ -21,7 +22,7 @@
 
   @media (min-width: $size-min-mobile + 100px) and (max-width: $size-mobile-only) {
     justify-content: center;
-    margin-right: 44px;
+    padding-right: 44px;
   }
 
   @media (min-width: $size-tablet) {

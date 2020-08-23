@@ -1,32 +1,65 @@
 .input-checkbox {
-  padding-bottom: 22px;
+  padding-bottom: 23px;
   display: flex;
 
   @media (min-width: $size-tablet) {
-    padding-right: 15px;
-    padding-bottom: 24px;
+    padding-right: 0;
+    padding-bottom: 0;
   }
 }
 
 .input-checkbox__img {
+  position: relative;
   display: block;
   width: 38px;
-  height: 39px;
+  height: 38px;
   border: 2px solid $text-main;
   flex-shrink: 0;
 
   @media (min-width: $size-tablet) {
-    width: 54px;
+    width: 52px;
     height: 52px;
   }
 }
 
 .input-checkbox__label {
-  padding-top: 10px;
-  padding-left: 23px;
+  align-self: center;
+  padding-left: 24px;
 
   @media (min-width: $size-tablet) {
-    padding-top: 14px;
-    padding-left: 28px;
+    padding-left: 30px;
+  }
+}
+
+.input-checkbox__input {
+  &:hover ~ .input-checkbox__img,
+  &:focus ~ .input-checkbox__img {
+    border-color: $decoration-first;
+  }
+
+  &:active ~ .input-checkbox__img {
+    border-color: rgba($text-first, 0.3);
+  }
+
+  &:checked ~ .input-checkbox__img::after {
+    position: absolute;
+    top: calc(50% - 16px / 2);
+    left: calc(50% - 23px / 2);
+    display: block;
+    width: 23px;
+    height: 16px;
+    content: "";
+    background-image: url("../img/icon-tick.svg");
+    background-size: 23px 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $size-tablet) {
+      top: calc(50% - 22px / 2);
+      left: calc(50% - 32px / 2);
+      width: 32px;
+      height: 22px;
+      background-size: 32px 22px;
+    }
   }
 }

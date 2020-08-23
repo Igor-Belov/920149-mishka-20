@@ -5,13 +5,13 @@
   padding-bottom: 55px;
 
   @media (min-width: $size-tablet) {
-    padding-top: 54px;
+    padding-top: 56px;
     padding-bottom: 50px;
   }
 
   @media (min-width: $size-desktop) {
     padding-top: 99px;
-    padding-bottom: 55px;
+    padding-bottom: 49px;
   }
 
   &--background {
@@ -38,13 +38,14 @@
 .form-order__text {
   @include font(normal, 13px, 24px, $text-main);
   margin: 0;
+  margin-bottom: 28px;
   padding: 0;
-  margin-bottom: 29px;
+  padding-right: 10px;
 
   @media (min-width: $size-tablet) {
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 61px;
+    margin-bottom: 64px;
   }
 
   @media (min-width: $size-desktop) {
@@ -56,15 +57,21 @@
   display: flex;
   width: 100%;
   padding: 0;
+  margin: 0;
   align-items: center;
   flex-shrink: 0;
 
   @include font(bold, 17px, 16px, $text-third, uppercase);
 
+  .form-order__legend-text {
+    min-width: 50px;
+  }
+
   &::after {
     @media (max-width: $size-mobile-only) {
       display: block;
       flex-grow: 1;
+      margin-left: 10px;
       height: 1px;
       background-color: $decoration-first;
       content: "";
@@ -81,7 +88,7 @@
 
   &--type {
     @media (min-width: $size-tablet) {
-      padding-top: 10px;
+      padding-top: 17px;
     }
   }
 
@@ -104,8 +111,14 @@
   }
 
   &--email {
+    margin-bottom: 4px;
+
+    &::after {
+      margin-left: 20px;
+    }
+
     @media (min-width: $size-tablet) {
-      padding-top: 20px;
+      padding-top: 18px;
     }
   }
 
@@ -121,12 +134,17 @@
   flex-grow: 1;
 
   &--type {
-    padding-top: 26px;
-    padding-bottom: 8px;
+    padding-top: 32px;
+    padding-bottom: 16px;
 
     @media (min-width: $size-tablet) {
       padding-top: 0;
       padding-bottom: 28px;
+    }
+
+    @media (min-width: $size-desktop) {
+      padding-top: 0;
+      padding-bottom: 25px;
     }
   }
 
@@ -138,19 +156,21 @@
       flex-grow: 1;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      padding-top: 50px;
-      padding-bottom: 26px;
+      column-gap: 23px;
+      row-gap: 24px;
+      padding-top: 48px;
+      padding-bottom: 50px;
     }
 
     @media (min-width: $size-desktop) {
-      grid-template-columns: repeat(3, calc(3 / 10 * 100%));
+      margin-right: -66px;
+      grid-template-columns: repeat(3, 1fr);
       padding-top: 50px;
-      padding-bottom: 26px;
     }
   }
 
   &--name {
-    padding-top: 28px;
+    padding-top: 29px;
     padding-bottom: 12px;
 
 
@@ -160,7 +180,6 @@
     }
   }
 }
-
 
 .form-order__footnote {
   display: block;

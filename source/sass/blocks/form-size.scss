@@ -15,7 +15,7 @@
   min-height: 336px;
   padding: 28px 30px 46px 30px;
   background-color: $background-first;
-  border: 1px solid #C6C6C6;
+  border: 1px solid #c6c6c6;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
 
   @media (min-width: $size-tablet) {
@@ -28,6 +28,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 14px;
+
   @include font(bold, 25px, 30px, $text-first, uppercase);
   text-align: center;
 
@@ -43,6 +44,7 @@
   padding: 0;
   margin-bottom: 22px;
   text-align: center;
+
   @include font(normal, 15px, 30px, $text-main);
 
   @media (min-width: $size-tablet) {
@@ -53,12 +55,12 @@
 
 .form-size__form {
   @media (min-width: $size-tablet) {
-  padding: 0 78px;
+    padding: 0 78px;
   }
 }
 
 .form-size__list {
-  @include  list-reset;
+  @include list-reset;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -87,8 +89,9 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: inherit;
   height: 100%;
+  min-height: inherit;
+
   @include font(bold, 17px, 16px, $text-main, uppercase);
 }
 

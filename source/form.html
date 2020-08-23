@@ -89,16 +89,36 @@
           </ul>
         </div>
         <a class="main-navigation__delivery" href="#">Бесплатная доставка по&nbsp;России</a>
-        <form class="search main-navigation__search" action="https://echo.htmlacademy.ru/" method="get">
+        <a class="search main-navigation__search" href="#" aria-label="поиск по сайту">
+          <span class="search__img"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px"
+              viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
+              <path fill="#231F20"
+                d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z" />
+            </svg>
+          </span>
+          <span class="search__text">Поиск по сайту</span>
+        </a>
+        <!-- Удалить при релизе. -->
+        <!-- <form class="search main-navigation__search" action="https://echo.htmlacademy.ru/" method="get">
           <label class="search__label">
             <input class="search__input" type="search" name="search" placeholder="Поиск по сайту">
             <span class="search__img"></span>
           </label>
-        </form>
+        </form> -->
         <a class="cart main-navigation__cart" href="#">
-          <span class="cart__img"></span>
-          Корзина:&#32;
-          <span class="cart__info">пока пуста</span>
+          <span class="cart__img"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="18px"
+              viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849"
+              xml:space="preserve">
+              <path fill="#231F20"
+                d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z" />
+            </svg>
+          </span>
+          <span class="cart__text">
+            Корзина:
+            <span class="cart__info">пока пуста</span>
+          </span>
         </a>
       </nav>
     </div>
@@ -112,24 +132,26 @@
     </div>
     <form class="form-order" action="https://echo.htmlacademy.ru/" method="get">
       <div class="wrapper">
-        <p class="form-order__text">Мы будем рады воплотить в&nbsp;жизнь ваши пожелания! Заполните простую форму заказа
+        <p class="form-order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа
           и&nbsp;мы
           свяжемся с&nbsp;вами, чтобы уточнить детали.</p>
       </div>
       <div class="wrapper">
         <section class="form-order__fieldset">
-          <h2 class="form-order__legend form-order__legend--type">Тип</h2>
+          <h2 class="form-order__legend form-order__legend--type">
+            <span class="form-order__legend-text">Тип</span>
+          </h2>
           <ul class="form-order__list form-order__list--type">
             <li class="form-order__item">
               <label class="input-radio">
-                <input class="visually-hidden" type="radio" name="type" value="accessory" checked>
+                <input class="input-radio__input visually-hidden" type="radio" name="type" value="accessory" checked>
                 <span class="input-radio__img"></span>
-                <span class="input-radio__label input-label">Аксессуар для&nbsp;интерьера</span>
+                <span class="input-radio__label input-label">Аксессуар для интерьера</span>
               </label>
             </li>
             <li class="form-order__item">
               <label class="input-radio">
-                <input class="visually-hidden" type="radio" name="type" value="accessory">
+                <input class="input-radio__input visually-hidden" type="radio" name="type" value="accessory">
                 <span class="input-radio__img"></span>
                 <span class="input-radio__label input-label">Детская игрушка</span>
               </label>
@@ -140,46 +162,48 @@
       <div class="form-order--background">
         <div class="wrapper">
           <section class="form-order__fieldset">
-            <h2 class="form-order__legend form-order__legend--color">Цвет</h2>
+            <h2 class="form-order__legend form-order__legend--color">
+              <span class="form-order__legend-text">Цвет</span>
+            </h2>
             <ul class="form-order__list form-order__list--color">
               <li class="form-order__item">
                 <label class="input-checkbox">
-                  <input class="visually-hidden" type="checkbox" name="white" checked>
+                  <input class="input-checkbox__input visually-hidden" type="checkbox" name="white" checked>
                   <span class="input-checkbox__img"></span>
                   <span class="input-checkbox__label input-label">Белый</span>
                 </label>
               </li>
               <li class="form-order__item">
                 <label class="input-checkbox">
-                  <input class="visually-hidden" type="checkbox" name="Gray" checked>
+                  <input class="input-checkbox__input visually-hidden" type="checkbox" name="Gray" checked>
                   <span class="input-checkbox__img"></span>
                   <span class="input-checkbox__label input-label">Серый</span>
                 </label>
               </li>
               <li class="form-order__item">
                 <label class="input-checkbox">
-                  <input class="visually-hidden" type="checkbox" name="Tiffany">
+                  <input class="input-checkbox__input visually-hidden" type="checkbox" name="Tiffany">
                   <span class="input-checkbox__img"></span>
                   <span class="input-checkbox__label input-label">«Тиффани»</span>
                 </label>
               </li>
               <li class="form-order__item">
                 <label class="input-checkbox">
-                  <input class="visually-hidden" type="checkbox" name="Black">
+                  <input class="input-checkbox__input visually-hidden" type="checkbox" name="Black">
                   <span class="input-checkbox__img"></span>
                   <span class="input-checkbox__label input-label">Черный</span>
                 </label>
               </li>
               <li class="form-order__item">
                 <label class="input-checkbox">
-                  <input class="visually-hidden" type="checkbox" name="Pink">
+                  <input class="input-checkbox__input visually-hidden" type="checkbox" name="Pink">
                   <span class="input-checkbox__img"></span>
                   <span class="input-checkbox__label input-label">Розовый</span>
                 </label>
               </li>
               <li class="form-order__item">
                 <label class="input-checkbox">
-                  <input class="visually-hidden" type="checkbox" name="Orange">
+                  <input class="input-checkbox__input visually-hidden" type="checkbox" name="Orange">
                   <span class="input-checkbox__img"></span>
                   <span class="input-checkbox__label input-label">Оранжевый</span>
                 </label>
@@ -190,7 +214,9 @@
       </div>
       <div class="wrapper">
         <section class="form-order__fieldset">
-          <h2 class="form-order__legend form-order__legend--name">ФИО</h2>
+          <h2 class="form-order__legend form-order__legend--name">
+            <span class="form-order__legend-text">ФИО</span>
+          </h2>
           <ul class="form-order__list form-order__list--name">
             <li class="form-order__item">
               <label class="name-input input-label">Имя:
@@ -213,7 +239,9 @@
       <div class="form-order--background">
         <div class="wrapper">
           <section class="form-order__fieldset">
-            <h2 class="form-order__legend form-order__legend--tel">Тел</h2>
+            <h2 class="form-order__legend form-order__legend--tel">
+              <span class="form-order__legend-text">Тел</span>
+            </h2>
             <label class="tel-input">
               <input class="tel-input__input" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
               <svg class="tel-input__img" width="25" height="24" viewBox="0 0 25 24" fill="none"
@@ -240,7 +268,9 @@
       <div class="form-order--background">
         <div class="wrapper">
           <section class="form-order__fieldset">
-            <h2 class="form-order__legend form-order__legend--email">E-mail</h2>
+            <h2 class="form-order__legend form-order__legend--email">
+              <span class="form-order__legend-text">E-mail</span>
+            </h2>
             <label class="email-input">
               <input class="email-input__input" type="email" name="email" placeholder="Ваш Email*" required>
               <svg class="email-input__img" width="32" height="21" viewBox="0 0 32 21" fill="none"
@@ -255,7 +285,9 @@
       </div>
       <div class="wrapper">
         <section class="form-order__fieldset">
-          <h2 class="form-order__legend form-order__legend--additional">Доп</h2>
+          <h2 class="form-order__legend form-order__legend--additional">
+            <span class="form-order__legend-text">Доп</span>
+          </h2>
           <label class="wishes-input">
             <textarea class="wishes-input__input" name="wishes"
               placeholder="Опишите все ваши пожелания к заказу"></textarea>
@@ -265,7 +297,7 @@
       <div class="wrapper">
         <div class="form-order__bottom">
           <span class="form-order__footnote">*Поля обязательны для&nbsp;заполнения</span>
-          <button class="form-order__button button">
+          <button class="form-order__button button button--form">
             <span class="button__text">Отправить заказ</span>
           </button>
         </div>

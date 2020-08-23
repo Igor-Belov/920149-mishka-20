@@ -17,13 +17,12 @@
     background-color: $background-navigation-products1-hover;
     position: relative;
     bottom: 5px;
-    box-shadow: 0px 5px 0px 0px $background-navigation-products1-hover;
-
+    box-shadow: 0 5px 0 0 $background-navigation-products1-hover;
   }
 
   &:active {
     background-color: $background-navigation-products1-active;
-    box-shadow: 0px 5px 0px 0px $background-navigation-products1-active;
+    box-shadow: 0 5px 0 0 $background-navigation-products1-active;
   }
 
   &:hover .product-button__img,
@@ -41,12 +40,12 @@
     &:hover,
     &:focus {
       background-color: $background-navigation-products2-hover;
-      box-shadow: 0px 5px 0px 0px $background-navigation-products2-hover;
+      box-shadow: 0 5px 0 0 $background-navigation-products2-hover;
     }
 
     &:active {
       background-color: $background-navigation-products2-active;
-      box-shadow: 0px 5px 0px 0px $background-navigation-products2-active;
+      box-shadow: 0 5px 0 0 $background-navigation-products2-active;
     }
   }
 
@@ -88,7 +87,7 @@
   &--toy {
     width: 60px;
     height: 60px;
-    margin-top: 0px;
+    margin-top: 0;
     margin-right: -3px;
     background-image: url("../img/icon-toy.svg");
     background-size: 100%;

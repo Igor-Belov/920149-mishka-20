@@ -27,6 +27,10 @@
     opacity: 0.3;
   }
 
+  &--form {
+    @include font(bold, 17px, 26px, $text-main, uppercase);
+  }
+
   &--popup {
     @include font(bold, 17px, 16px, $text-second, uppercase);
     background-color: $decoration-first;

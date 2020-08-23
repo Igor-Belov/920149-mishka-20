@@ -6,7 +6,7 @@
 
   @media (min-width: $size-tablet) {
     min-height: 143px;
-    padding-top: 56px;
+    padding-top: 53px;
     padding-bottom: 51px;
   }
 }
@@ -16,6 +16,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -24,7 +25,6 @@
 
   @media (min-width: $size-tablet) {
     display: block;
-    width: calc(100% * 1 / 3);
     min-height: 34px;
   }
 }
@@ -54,11 +54,5 @@
     padding: 0;
     border: none;
     flex-grow: 1;
-  }
-}
-
-.page-footer__copyright {
-  @media (min-width: $size-tablet) {
-    width: calc(100% * 1 / 3);
   }
 }

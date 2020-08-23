@@ -1,11 +1,15 @@
 .wishes-input {
   width: 100%;
   padding-top: 22px;
-  padding-bottom: 17px;
+  padding-bottom: 10px;
 
   @media (min-width: $size-tablet) {
     padding-top: 50px;
-    padding-bottom: 53px;
+    padding-bottom: 46px;
+  }
+
+  @media (min-width: $size-desktop) {
+    padding-bottom: 43px;
   }
 }
 
@@ -15,6 +19,15 @@
   resize: none;
   padding: 17px;
   border: 2px solid $text-main;
+
+  @include font(normal, 19px, 18px, $text-main);
+  font-family: "Open Sans", "Arial", sans-serif;
+
+  &:hover,
+  &:focus {
+    border-color: $decoration-first;
+    outline: none;
+  }
 }
 
 .wishes-input__input::placeholder {
