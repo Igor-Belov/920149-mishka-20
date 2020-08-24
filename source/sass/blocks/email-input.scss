@@ -38,7 +38,7 @@
 }
 
 .email-input__input::placeholder {
-  @include font(normal, 17px, 18px, $text-placeholder);
+  @include font(normal, 17px, 44px, $text-placeholder);
   font-family: "Open Sans", "Arial", sans-serif;
 
   @media (min-width: $size-tablet) {

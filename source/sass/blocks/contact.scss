@@ -9,11 +9,24 @@
   }
 
   @media (min-width: $size-desktop) {
-    grid-template-columns: calc(100% * 2 / 5) calc(100% * 3 / 5);
-    grid-template-rows: min-content min-content 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content 1fr;
+    width: 1150px;
+    max-width: 1150px;
+    padding: 0 $padding-desktop;
+    margin: 0 auto;
     padding-top: 71px;
-    padding-left: 16.66%;
-    padding-bottom: 105px;
+    padding-bottom: 104px;
+  }
+}
+
+.contact__content-box {
+  @media (min-width: $size-desktop) {
+    grid-column: 1 / 2;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    padding-left: 173px;
   }
 }
 
@@ -149,35 +162,14 @@
 }
 
 .contact__map {
-  position: relative;
   width: 100%;
   min-height: 457px;
   margin-bottom: 39px;
-
-  &::after {
-    position: absolute;
-    top: 0;
-    left: -$padding-mobile;
-    display: block;
-    width: calc(100% + 2 * 30px);
-    height: 100%;
-    background-color: $background-second;
-    background-image: url("../img/icon-map-pin.svg"), url("../img/map-mobile@1x.jpg");
-    background-size: 67px 100px, contain;
-    background-repeat: no-repeat, no-repeat;
-    background-position: 55% 146px, center;
-    content: "";
-
-    @media (min-width: $size-tablet) {
-      width: calc(100% + 2 * 50px);
-      left: -$padding-tablet;
-    }
-
-    @media (min-width: $size-desktop) {
-      left: 0;
-      width: 100%;
-    }
-  }
+  background-color: $background-second;
+  background-image: url("../img/icon-map-pin.svg"), url("../img/map-mobile@1x.jpg");
+  background-size: 67px 100px, contain;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 55% 146px, center;
 
   @media (min-width: $size-tablet) {
     margin-bottom: 55px;
@@ -190,17 +182,23 @@
   }
 }
 
+.contact__button-box {
+  @media (min-width: $size-tablet) {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: auto;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $size-desktop) {
+    margin-left: 55px;
+  }
+  }
+}
+
 .contact__button {
   @media (min-width: $size-tablet) {
     min-width: 230px;
-  }
-
-  @media (min-width: $size-tablet) and (max-width: $size-desktop) {
-    justify-self: center;
-  }
-
-  @media (min-width: $size-desktop) {
-    justify-self: start;
-    align-self: end;
   }
 }

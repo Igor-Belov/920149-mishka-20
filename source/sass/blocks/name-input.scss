@@ -33,11 +33,12 @@
 }
 
 .name-input__input::placeholder {
-  @include font(normal, 17px, 18px, $text-placeholder);
+  @include font(normal, 17px, 51px, $text-placeholder);
   font-family: "Open Sans", "Arial", sans-serif;
 
   @media (min-width: $size-tablet) {
     font-size: 19px;
+    line-height: 48px;
   }
 
   @media (min-width: $size-desktop) {

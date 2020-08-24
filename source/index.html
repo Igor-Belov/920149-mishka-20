@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-<style></style>
 
 <head>
   <meta charset="UTF-8">
@@ -261,32 +260,36 @@
           <span class="button__text">Написать</span>
         </button>
       </section>
-
-      <section class="contact">
-        <h2 class="contact__title">Контакты</h2>
-        <dl class="contact__list">
-          <div class="contact__item">
-            <dt class="contact__name">e-mail:</dt>
-            <dd class="contact__definition">
-              <a class="contact__link" href="info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-            </dd>
-          </div>
-          <div class="contact__item">
-            <dt class="contact__name">адрес:</dt>
-            <dd class="contact__definition">
-              <p class="contact__text">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная,<br>д.&nbsp;19/8,
-                офис&nbsp;101</p>
-            </dd>
-          </div>
-        </dl>
-        <div class="contact__map">
-          <span class="visually-hidden">Карта с&nbsp;адрессом ул.&nbsp;Большая&nbsp;Конюшенная, д.&nbsp;19/8</span>
-        </div>
-        <a class="button contact__button" href="#">
-          <span class="button__text">Напишите нам</span>
-        </a>
-      </section>
     </div>
+    <section class="contact">
+      <div class="wrapper contact__content-box">
+      <h2 class="contact__title">Контакты</h2>
+      <dl class="contact__list">
+        <div class="contact__item">
+          <dt class="contact__name">e-mail:</dt>
+          <dd class="contact__definition">
+            <a class="contact__link" href="info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </dd>
+        </div>
+        <div class="contact__item">
+          <dt class="contact__name">адрес:</dt>
+          <dd class="contact__definition">
+            <p class="contact__text">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная,<br>д.&nbsp;19/8,
+              офис&nbsp;101</p>
+          </dd>
+        </div>
+      </dl>
+      </div>
+      <div class="contact__map">
+        <span class="visually-hidden">Карта с&nbsp;адрессом ул.&nbsp;Большая&nbsp;Конюшенная, д.&nbsp;19/8</span>
+      </div>
+      <div class="wrapper contact__button-box">
+      <a class="button contact__button" href="#">
+        <span class="button__text">Напишите нам</span>
+      </a>
+      </div>
+    </section>
+
   </main>
 
   <footer class="page-footer">
@@ -359,25 +362,25 @@
     </div>
   </footer>
 
-  <section class="form-size">
+  <section class="form-size visually-hidden">
     <div class="form-size__wrapper">
-    <h2 class="form-size__title">Добавить в&nbsp;корзину</h2>
-    <p class="form-size__text">Выберите размер:</p>
-    <form class="form-size__form" action="https://echo.htmlacademy.ru/" method="get">
-      <ul class="form-size__list">
-        <li class="form-size__item">
-          <label class="form-size__label">
-            <input class="form-size__input visually-hidden" type="radio" name="size" value="s" checked>
-            <span class="form-size__img-input"></span>
-            <span class="form-size__label-input">s</span>
-          </label>
-        </li>
-        <li class="form-size__item">
-          <label class="form-size__label">
-            <input class="form-size__input visually-hidden" type="radio" name="size" value="m">
-            <span class="form-size__img-input"></span>
-            <span class="form-size__label-input">m</span>
-          </label>
+      <h2 class="form-size__title">Добавить в&nbsp;корзину</h2>
+      <p class="form-size__text">Выберите размер:</p>
+      <form class="form-size__form" action="https://echo.htmlacademy.ru/" method="get">
+        <ul class="form-size__list">
+          <li class="form-size__item">
+            <label class="form-size__label">
+              <input class="form-size__input visually-hidden" type="radio" name="size" value="s" checked>
+              <span class="form-size__img-input"></span>
+              <span class="form-size__label-input">s</span>
+            </label>
+          </li>
+          <li class="form-size__item">
+            <label class="form-size__label">
+              <input class="form-size__input visually-hidden" type="radio" name="size" value="m">
+              <span class="form-size__img-input"></span>
+              <span class="form-size__label-input">m</span>
+            </label>
           <li class="form-size__item">
             <label class="form-size__label">
               <input class="form-size__input visually-hidden" type="radio" name="size" value="l">
@@ -385,12 +388,11 @@
               <span class="form-size__label-input">l</span>
             </label>
           </li>
-        </li>
-      </ul>
-      <button class="form-size__button button button--popup">
-        <span class="button__text">Добавить</span>
-      </button>
-    </form>
+        </ul>
+        <button class="form-size__button button button--popup">
+          <span class="button__text">Добавить</span>
+        </button>
+      </form>
     </div>
   </section>
 </body>
