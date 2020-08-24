@@ -3,12 +3,49 @@
   align-items: center;
   text-decoration: none;
   min-height: 79px;
+  width: 100%;
 
-  @include font-nav;
+  &:hover path,
+  &:focus path {
+    fill: $decoration-first;
+    opacity: 1;
+  }
+
+  &:hover .cart__text,
+  &:focus .cart__text {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $size-min-mobile + 100px) and (max-width: $size-mobile-only) {
+    justify-content: center;
+    padding-right: 44px;
+  }
 
   @media (min-width: $size-tablet) {
+    justify-content: flex-end;
     min-height: 89px;
-    width: 266px;
-    padding: 10px 0 10px 81px;
+    width: 264px;
+    padding: 10px 0 10px 10px;
+  }
+}
+
+.cart__img {
+  margin-top: 5px;
+
+  & path {
+    opacity: 0.2;
+  }
+}
+
+.cart__text {
+  @include font-nav;
+  margin-left: 26px;
+
+  @media (min-width: $size-tablet) {
+    margin-left: 31px;
   }
 }

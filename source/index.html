@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <style></style>
+<style></style>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -33,7 +34,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
+  <header class="page-header page-header--index">
     <div class="wrapper">
       <nav class="main-navigation page-header__navigation">
         <a class="main-navigation__logo">
@@ -88,16 +89,36 @@
           </ul>
         </div>
         <a class="main-navigation__delivery" href="#">Бесплатная доставка по&nbsp;России</a>
-        <form class="search main-navigation__search" action="https://echo.htmlacademy.ru/" method="get">
+        <a class="search main-navigation__search" href="#" aria-label="поиск по сайту">
+          <span class="search__img"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px"
+              viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
+              <path fill="#231F20"
+                d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z" />
+            </svg>
+          </span>
+          <span class="search__text">Поиск по сайту</span>
+        </a>
+        <!-- Удалить при релизе. -->
+        <!-- <form class="search main-navigation__search" action="https://echo.htmlacademy.ru/" method="get">
           <label class="search__label">
             <input class="search__input" type="search" name="search" placeholder="Поиск по сайту">
             <span class="search__img"></span>
           </label>
-        </form>
+        </form> -->
         <a class="cart main-navigation__cart" href="#">
-          <span class="cart__img"></span>
-          Корзина:&#32;
-          <span class="cart__info">пока пуста</span>
+          <span class="cart__img"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="18px"
+              viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849"
+              xml:space="preserve">
+              <path fill="#231F20"
+                d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z" />
+            </svg>
+          </span>
+          <span class="cart__text">
+            Корзина:
+            <span class="cart__info">пока пуста</span>
+          </span>
         </a>
       </nav>
     </div>
@@ -107,16 +128,16 @@
     <h1 class="visually-hidden">Разрешите представиться-магазин вязанных вещей «Мишка»!</h1>
     <div class="page-main__stretch-background">
       <section class="navigation-products page-main__navigation wrapper">
-        <h2 class="navigation-products__title">Милые штуки ручной работы для&nbsp;дома</h2>
+        <h2 class="navigation-products__title">Милые штуки ручной<br>работы для&nbsp;дома</h2>
         <ul class="navigation-products__list">
           <li class="product-button navigation-products__item">
             <a class="product-button__link" href="#">
               <span class="product-button__text">Предметы интерьера</span>
-              <span class="product-button__img product-button__img--toy"></span>
+              <span class="product-button__img product-button__img--thing"></span>
             </a>
           </li>
-          <li class="product-button navigation-products__item product-button--style--dark">
-            <a class="product-button__link" href="#">
+          <li class="product-button navigation-products__item">
+            <a class="product-button__link product-button__link--style--dark" href="#">
               <span class="product-button__text">Детские игрушки</span>
               <span class="product-button__img product-button__img--toy"></span>
             </a>
@@ -127,7 +148,7 @@
     <div class="wrapper">
       <section class="product-offering">
         <h2 class="visually-hidden">Интересное предложение</h2>
-        <article class="product-card product-offering__article">
+        <article class="product-card">
           <h3 class="product-card__title">Вязаные корзинки</h3>
           <span class="product-card__type">Товар недели</span>
           <div class="product-card__description">Экологически чистая пряжа, ручная работа. Доступны в&nbsp;шести
@@ -167,28 +188,28 @@
         <h2 class="about-us__title">Коротко о&nbsp;нас:</h2>
         <ul class="about-us__list">
           <li class="about-us-fact about-us__item">
-            <span class="about-us-fact__img"></span>
-            <span class="about-us-fact__text">Экологически чистые материалы</span>
+            <span class="about-us-fact__img about-us-fact__img--flower"></span>
+            <p class="about-us-fact__text">Экологически<br>чистые материалы</p>
           </li>
           <li class="about-us-fact about-us__item">
-            <span class="about-us-fact__img"></span>
-            <span class="about-us-fact__text">Скандинавский стиль по&nbsp;российской цене</span>
+            <span class="about-us-fact__img about-us-fact__img--banknote"></span>
+            <p class="about-us-fact__text">Скандинавский стиль по&nbsp;российской цене</p>
           </li>
           <li class="about-us-fact about-us__item">
-            <span class="about-us-fact__img"></span>
-            <span class="about-us-fact__text">Увеличивает лайки на&nbsp;фотографиях</span>
+            <span class="about-us-fact__img about-us-fact__img--heart"></span>
+            <p class="about-us-fact__text">Увеличивает лайки на&nbsp;фотографиях</p>
           </li>
           <li class="about-us-fact about-us__item">
-            <span class="about-us-fact__img"></span>
-            <span class="about-us-fact__text">Связано вручную с&nbsp;любовью и&nbsp;умилением</span>
+            <span class="about-us-fact__img about-us-fact__img--ball"></span>
+            <p class="about-us-fact__text">Связано вручную с любовью и&nbsp;умилением</p>
           </li>
           <li class="about-us-fact about-us__item">
-            <span class="about-us-fact__img"></span>
-            <span class="about-us-fact__text">Поддержка отечественного производителя</span>
+            <span class="about-us-fact__img about-us-fact__img--rocket"></span>
+            <p class="about-us-fact__text">Поддержка отечественного производителя</p>
           </li>
           <li class="about-us-fact about-us__item">
-            <span class="about-us-fact__img"></span>
-            <span class="about-us-fact__text">Поставляется в&nbsp;подарочной упаковке</span>
+            <span class="about-us-fact__img about-us-fact__img--gift"></span>
+            <p class="about-us-fact__text">Поставляется в подарочной упаковке</p>
           </li>
         </ul>
       </section>
@@ -202,7 +223,7 @@
               <blockquote class="reviews__article">
                 <p class="reviews__text">Я молодая мама, но&nbsp;всё&nbsp;равно фотографии не&nbsp;набирали
                   и&nbsp;близко такого количества
-                  лайков, как&nbsp;у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я накупила аксессуаров
+                  лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
                   и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают
                   больше лайков!</p>
                 <cite class="reviews__author-name">Анастасия Красильникова
@@ -210,7 +231,7 @@
                 </cite>
               </blockquote>
             </li>
-            <li class="reviews__item slider__item">
+            <li class="reviews__item slider__item visually-hidden">
               <blockquote class="reviews__article">
                 <p class="reviews__text">Я старый дед! И при&nbsp;Александре&nbsp;II такой фигни не&nbsp;было!</p>
                 <cite class="reviews__author-name">Дед Похом
@@ -218,7 +239,7 @@
                 </cite>
               </blockquote>
             </li>
-            <li class="reviews__item slider__item">
+            <li class="reviews__item slider__item visually-hidden">
               <blockquote class="reviews__article">
                 <p class="reviews__text">Я люблю крафтовый квас и&nbsp;уход за&nbsp;бородой. Что я тут&nbsp;делаю?</p>
                 <cite class="reviews__author-name">Случайный прохожий
@@ -253,7 +274,7 @@
           <div class="contact__item">
             <dt class="contact__name">адрес:</dt>
             <dd class="contact__definition">
-              <p class="contact__text">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, д.&nbsp;19/8,
+              <p class="contact__text">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная,<br>д.&nbsp;19/8,
                 офис&nbsp;101</p>
             </dd>
           </div>
@@ -337,6 +358,41 @@
       </div>
     </div>
   </footer>
+
+  <section class="form-size">
+    <div class="form-size__wrapper">
+    <h2 class="form-size__title">Добавить в&nbsp;корзину</h2>
+    <p class="form-size__text">Выберите размер:</p>
+    <form class="form-size__form" action="https://echo.htmlacademy.ru/" method="get">
+      <ul class="form-size__list">
+        <li class="form-size__item">
+          <label class="form-size__label">
+            <input class="form-size__input visually-hidden" type="radio" name="size" value="s" checked>
+            <span class="form-size__img-input"></span>
+            <span class="form-size__label-input">s</span>
+          </label>
+        </li>
+        <li class="form-size__item">
+          <label class="form-size__label">
+            <input class="form-size__input visually-hidden" type="radio" name="size" value="m">
+            <span class="form-size__img-input"></span>
+            <span class="form-size__label-input">m</span>
+          </label>
+          <li class="form-size__item">
+            <label class="form-size__label">
+              <input class="form-size__input visually-hidden" type="radio" name="size" value="l">
+              <span class="form-size__img-input"></span>
+              <span class="form-size__label-input">l</span>
+            </label>
+          </li>
+        </li>
+      </ul>
+      <button class="form-size__button button button--popup">
+        <span class="button__text">Добавить</span>
+      </button>
+    </form>
+    </div>
+  </section>
 </body>
 
 </html>

@@ -7,6 +7,7 @@
 html {
   box-sizing: border-box;
   overflow: auto;
+  overflow-x: hidden;
   margin-right: calc((100% - 100vw) / 2);
   margin-left: calc((100% - 100vw) / 2);
 }
@@ -43,6 +44,7 @@ img {
 
 .page__body {
   min-height: 100%;
+  max-width: 100%;
   margin: 0;
   background-color: $background-first;
   color: $text-first;
@@ -65,15 +67,13 @@ $padding-desktop: 50px;
   padding: 0 $padding-mobile;
 
   @media (min-width: $size-tablet) {
-    width: 100%;
+    width: 768px;
     padding: 0 $padding-tablet;
   }
 
   @media (min-width: $size-desktop) {
-    width: 100%;
+    width: 1150px;
     max-width: $size-max-desktop;
     padding: 0 $padding-desktop;
-
   }
 }
-

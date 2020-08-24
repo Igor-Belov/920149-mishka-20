@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
   @media (min-width: $size-tablet) {
     justify-content: flex-end;
@@ -11,13 +11,16 @@
 
 .copyright__text {
   margin-right: 27px;
+  padding-top: 5px;
 
   @include font(bold, 19px, 18px, $text-first);
+
+  @media (min-width: $size-tablet) {
+    padding-top: 8px;
+  }
 }
 
 .copyright__link {
-  display: flex;
-
   &:hover path,
   &:focus path {
     fill: $decoration-second;

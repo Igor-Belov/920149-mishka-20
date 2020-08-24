@@ -6,7 +6,7 @@
   min-width: 100px;
   min-height: 52px;
 
-  @include font(bold, 17px, 20px, $text-main, uppercase);
+  @include font(bold, 18px, 20px, $text-main, uppercase);
   font-family: "Open Sans", "Arial", sans-serif;
   background-color: $background-first;
   text-decoration: none;
@@ -25,5 +25,15 @@
 
   &:active .button__text {
     opacity: 0.3;
+  }
+
+  &--form {
+    @include font(bold, 17px, 26px, $text-main, uppercase);
+  }
+
+  &--popup {
+    @include font(bold, 17px, 16px, $text-second, uppercase);
+    background-color: $decoration-first;
+    border: none;
   }
 }

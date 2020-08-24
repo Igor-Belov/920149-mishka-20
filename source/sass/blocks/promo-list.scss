@@ -5,11 +5,20 @@
   flex-wrap: wrap;
 
   & :not(:last-child) {
-    padding-right: 56px;
+    padding-right: 63px;
   }
 }
 
 .promo-list__link {
   @include font-nav-second;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

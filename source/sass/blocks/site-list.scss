@@ -1,19 +1,22 @@
 .site-list {
   @include list-reset;
 
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $size-tablet) {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 
     & :not(:last-child) {
-      margin-right: 30px;
+      margin-right: 37px;
     }
   }
 
   @media (min-width: $size-desktop) {
     & :not(:last-child) {
-      margin-right: 30px;
-      padding-right: 30px;
+      margin-right: 36px;
+      padding-right: 35px;
       border-right: 1px solid rgba($logo, 0.1);
     }
   }
@@ -33,9 +36,30 @@
 
 .site-list__link {
   @include font-nav;
+  width: 100%;
   text-decoration: none;
+  padding-left: 46px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $size-min-mobile + 100px) and (max-width: $size-mobile-only) {
+    padding-left: 0;
+    text-align: center;
+  }
 
   @media (min-width: $size-tablet) and (max-width: $size-desktop - 1px) {
     @include font-nav-second;
+    padding-left: 0;
+  }
+
+  @media (min-width: $size-desktop) {
+    padding-left: 0;
   }
 }

@@ -15,6 +15,14 @@
     max-width: none;
     min-height: 659px;
   }
+
+  &:hover .product-item__text-block {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active .product-item__text-block {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 
@@ -25,6 +33,7 @@
   text-decoration: none;
   overflow: hidden;
   flex-shrink: 0;
+  background-color: $background-second;
 
   @media (min-width: $size-tablet) {
     width: 50%;
@@ -32,16 +41,15 @@
 
   @media (min-width: $size-desktop) {
     width: 100%;
+    min-height: 462px;
   }
 }
 
 .product-item__img {
-  background-color: $background-second;
   object-fit: cover;
   width: 100%;
 
   @media (min-width: $size-tablet) and (max-width: $size-desktop - 1px) {
-    // width: auto;
     height: 100%;
   }
 }
@@ -50,16 +58,35 @@
   display: flex;
   flex-grow: 1;
   flex-direction: column;
+  align-content: flex-start;
   padding: 27px 32px 26px 28px;
   border: 1px solid $background-header-line;
 
+  &--big-title {
+    padding: 24px 32px 26px 27px;
+
+    @media (min-width: $size-tablet) {
+      padding-top: 27px;
+    }
+  }
+
   @media (min-width: $size-tablet) and (max-width: $size-desktop - 1px) {
     padding-left: 32px;
+    padding-bottom: 24px;
   }
 }
 
 .product-item__link {
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product-item__title {
@@ -77,10 +104,24 @@
 
 .product-item__discription {
   @include font(normal, 13px, 30px, $text-main);
+  margin: 0;
+  padding: 0;
   padding-bottom: 17px;
+
+  &--big-title {
+    margin-top: 5px;
+
+    @media (min-width: $size-tablet) {
+      margin-top: 0;
+    }
+  }
 
   @media (min-width: $size-tablet) {
     font-size: 15px;
+  }
+
+  @media (min-width: $size-desktop) {
+    padding-bottom: 5px;
   }
 }
 
@@ -89,8 +130,12 @@
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
-  padding-top: 23px;
+  padding-top: 21px;
   border-top: 1px solid $background-header-line;
+
+  @media (min-width: $size-tablet) {
+    padding-top: 24px;
+  }
 }
 
 .product-item__price {
@@ -105,5 +150,14 @@
 
   @media (min-width: $size-tablet) {
     font-size: 17px;
+  }
+}
+
+.product-item__button {
+  margin-top: -10px;
+  margin-right: -6px;
+
+  @media (min-width: $size-tablet) {
+    margin-right: 0;
   }
 }
