@@ -167,10 +167,14 @@
             </tr>
           </table>
           <div class="product-card__img">
-            <!-- Это конечно переделаю на scrset, но потом, и не забыть 100%. -->
-            <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="фото товара: три вязаных корзинки">
-            <img src="img/triple-set-tablet@1x.jpg" width="333" height="404" alt="фото товара: три вязаных корзинки">
-            <img src="img/triple-set-desktop@1x.jpg" width="525" height="636" alt="фото товара: три вязаных корзинки">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x,
+              img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x,
+              img/triple-set-tablet@2x.jpg 2x">
+              <img class="product-card__img-content" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315"
+                alt="три вязанные корзинки лежащие друг на друге">
+            </picture>
           </div>
 
           <div class="product-card__price-block">Цена:
@@ -263,30 +267,30 @@
     </div>
     <section class="contact">
       <div class="wrapper contact__content-box">
-      <h2 class="contact__title">Контакты</h2>
-      <dl class="contact__list">
-        <div class="contact__item">
-          <dt class="contact__name">e-mail:</dt>
-          <dd class="contact__definition">
-            <a class="contact__link" href="info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          </dd>
-        </div>
-        <div class="contact__item">
-          <dt class="contact__name">адрес:</dt>
-          <dd class="contact__definition">
-            <p class="contact__text">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная,<br>д.&nbsp;19/8,
-              офис&nbsp;101</p>
-          </dd>
-        </div>
-      </dl>
+        <h2 class="contact__title">Контакты</h2>
+        <dl class="contact__list">
+          <div class="contact__item">
+            <dt class="contact__name">e-mail:</dt>
+            <dd class="contact__definition">
+              <a class="contact__link" href="info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </dd>
+          </div>
+          <div class="contact__item">
+            <dt class="contact__name">адрес:</dt>
+            <dd class="contact__definition">
+              <p class="contact__text">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная,<br>д.&nbsp;19/8,
+                офис&nbsp;101</p>
+            </dd>
+          </div>
+        </dl>
       </div>
       <div class="contact__map">
         <span class="visually-hidden">Карта с&nbsp;адрессом ул.&nbsp;Большая&nbsp;Конюшенная, д.&nbsp;19/8</span>
       </div>
       <div class="wrapper contact__button-box">
-      <a class="button contact__button" href="#">
-        <span class="button__text">Напишите нам</span>
-      </a>
+        <a class="button contact__button" href="#">
+          <span class="button__text">Напишите нам</span>
+        </a>
       </div>
     </section>
 

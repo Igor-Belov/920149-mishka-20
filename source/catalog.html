@@ -99,13 +99,6 @@
           </span>
           <span class="search__text">Поиск по сайту</span>
         </a>
-        <!-- Удалить при релизе. -->
-        <!-- <form class="search main-navigation__search" action="https://echo.htmlacademy.ru/" method="get">
-          <label class="search__label">
-            <input class="search__input" type="search" name="search" placeholder="Поиск по сайту">
-            <span class="search__img"></span>
-          </label>
-        </form> -->
         <a class="cart main-navigation__cart" href="#">
           <span class="cart__img"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="18px"
@@ -135,8 +128,15 @@
         <ul class="protucts-catalog__list">
           <li class="protucts-catalog__item product-item">
             <a class="product-item__img-box" href="#">
-              <img class="product-item__img" src="img/photo-hare-mobile@1x.jpg" width="260" height="195"
-                alt="фото игрушки Зайчик-попрыгайчик">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x,
+                          img/photo-hare-desktop@2x.jpg 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-hare-tablet@1x.jpg 1x,
+                        img/photo-hare-tablet@2x.jpg 2x">
+                <img class="product-item__img" src="img/photo-hare-mobile@1x.jpg"
+                  srcset="img/photo-hare-mobile@2x.jpg 2x" width="260" height="195"
+                  alt="вязанный зайчик, похож на человечка в синим боди">
+              </picture>
             </a>
             <div class="product-item__text-block">
               <a class="product-item__link" href="#">
@@ -158,8 +158,15 @@
           </li>
           <li class="protucts-catalog__item product-item">
             <a class="product-item__img-box" href="#">
-              <img class="product-item__img" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195"
-                alt="фото корзины для белья">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x,
+                          img/photo-bowl-desktop@2x.jpg 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-bowl-tablet@1x.jpg 1x,
+                        img/photo-bowl-tablet@2x.jpg 2x">
+                <img class="product-item__img" src="img/photo-bowl-mobile@1x.jpg"
+                  srcset="img/photo-bowl-mobile@2x.jpg 2x" width="260" height="195"
+                  alt="вязанная корзинка для белья, белый верх и кораловый низ">
+              </picture>
             </a>
             <div class="product-item__text-block">
               <a class="product-item__link" href="#">
@@ -181,14 +188,22 @@
           </li>
           <li class="protucts-catalog__item product-item">
             <a class="product-item__img-box" href="#">
-              <img class="product-item__img" src="img/photo-toys-mobile@1x.jpg" width="260" height="195"
-                alt="фото корзинки для игрушек">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x,
+                          img/photo-toys-desktop@2x.jpg 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-toys-tablet@1x.jpg 1x,
+                        img/photo-toys-tablet@2x.jpg 2x">
+                <img class="product-item__img" src="img/photo-toys-mobile@1x.jpg"
+                  srcset="img/photo-toys-mobile@2x.jpg 2x" width="260" height="195"
+                  alt="вязанная корзинка, белый верх и зеленый низ">
+              </picture>
             </a>
             <div class="product-item__text-block product-item__text-block--big-title">
               <a class="product-item__link" href="#">
                 <h2 class="product-item__title">Большая корзинка для&nbsp;игрушек</h2>
               </a>
-              <p class="product-item__discription product-item__discription--big-title">Диаметр 30&nbsp;см, высота 30&nbsp;см</p>
+              <p class="product-item__discription product-item__discription--big-title">Диаметр 30&nbsp;см, высота
+                30&nbsp;см</p>
               <div class="product-item__bottom">
                 <p class="product-item__price">1&nbsp;500</p>
                 <a class="product-item__button button-add-cart" aria-label="Добавить в корзину">
@@ -210,7 +225,7 @@
         <span class="video__icon"></span>
         <h2 class="video__title">Процесс производства</h2>
         <div class="video__box">
-          <video class="video__video" width="260" height="150" poster="img/video-mobile@1x.jpg">
+          <video class="video__video" width="260" height="150" poster="img/poster.png">
             <source src="#">
           </video>
           <button class="video__button-play" type="button"></button>

@@ -65,6 +65,10 @@
     background-position: center;
   }
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/review@2x.jpg");
+  }
+
   @media (min-width: $size-desktop) {
     left: 0;
   }

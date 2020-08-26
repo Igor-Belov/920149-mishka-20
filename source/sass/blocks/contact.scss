@@ -171,14 +171,31 @@
   background-repeat: no-repeat, no-repeat;
   background-position: 55% 146px, center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/icon-map-pin.svg"), url("../img/map-mobile@2x.jpg");
+  }
+
   @media (min-width: $size-tablet) {
     margin-bottom: 55px;
+    background-image: url("../img/icon-map-pin.svg"), url("../img/map-tablet@1x.jpg");
+    background-position: 52% 141px, center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/icon-map-pin.svg"), url("../img/map-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $size-desktop) {
     margin-bottom: 0;
     grid-column: 2 / -1;
     grid-row: 1 / -1;
+    background-image: url("../img/icon-map-pin.svg"), url("../img/map-desktop@1x.jpg");
+    background-position: 52% 146px, center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/icon-map-pin.svg"), url("../img/map-desktop@2x.jpg");
+    }
+
   }
 }
 
