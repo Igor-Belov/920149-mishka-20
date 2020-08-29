@@ -2,13 +2,17 @@
   width: 20px;
   height: 19px;
 
-  &:hover path,
-  &:focus path {
+  &:hover .button-add-cart__img,
+  &:focus .button-add-cart__img {
     opacity: 1;
     fill: $decoration-first;
   }
 
-  &:active path {
+  &:active {
     opacity: 0.3;
   }
+}
+
+.button-add-cart__img {
+  opacity: 0.2;
 }

@@ -5,8 +5,8 @@
   min-height: 79px;
   width: 100%;
 
-  &:hover path,
-  &:focus path {
+  &:hover .cart__img,
+  &:focus .cart__img {
     fill: $decoration-first;
     opacity: 1;
   }
@@ -34,10 +34,15 @@
 }
 
 .cart__img {
+  opacity: 0.2;
   margin-top: 5px;
 
-  & path {
-    opacity: 0.2;
+  .cart:hover & {
+    opacity: 1;
+  }
+
+  .cart:focus & {
+    opacity: 1;
   }
 }
 

@@ -195,22 +195,21 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/icon-map-pin.svg"), url("../img/map-desktop@2x.jpg");
     }
-
   }
 }
 
 .contact__button-box {
   @media (min-width: $size-tablet) {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  width: auto;
-  margin: 0;
-  padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: auto;
+    margin: 0;
+    padding: 0;
 
-  @media (min-width: $size-desktop) {
-    margin-left: 55px;
-  }
+    @media (min-width: $size-desktop) {
+      margin-left: 55px;
+    }
   }
 }
 

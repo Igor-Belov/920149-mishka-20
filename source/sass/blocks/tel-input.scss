@@ -32,13 +32,9 @@
     box-shadow: inset 0 -2px 0 $decoration-first;
   }
 
-  &:hover ~ .tel-input__img path,
-  &:focus ~ .tel-input__img path {
+  &:hover ~ .tel-input__img,
+  &:focus ~ .tel-input__img {
     fill: $decoration-first;
-  }
-
-  &:hover ~ .tel-input__img g,
-  &:focus ~ .tel-input__img g {
     opacity: 1;
   }
 }
@@ -50,16 +46,13 @@
   @media (min-width: $size-tablet) {
     font-size: 19px;
   }
-
-  @media (min-width: $size-desktop) {
-    color: $text-first;
-  }
 }
 
 .tel-input__img {
   position: absolute;
   bottom: 19px;
   right: 8px;
+  opacity: 0.2;
 
   @media (min-width: $size-tablet) {
     bottom: 18px;

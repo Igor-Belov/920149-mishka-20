@@ -11,12 +11,12 @@
 }
 
 .socials__link {
-  &:hover path,
-  &:focus path {
+  &:hover .socials__img,
+  &:focus .socials__img {
     fill: $decoration-second;
   }
 
-  &:active path {
+  &:active .socials__img {
     opacity: 0.3;
   }
 }

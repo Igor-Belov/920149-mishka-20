@@ -4,8 +4,8 @@
   text-decoration: none;
   width: 100%;
 
-  &:hover path,
-  &:focus path {
+  &:hover .search__img,
+  &:focus .search__img {
     fill: $decoration-first;
     opacity: 1;
   }
@@ -15,7 +15,8 @@
     opacity: 0.6;
   }
 
-  &:active {
+  &:active .search__img,
+  &:active .search__text {
     opacity: 0.3;
   }
 
@@ -35,10 +36,7 @@
 .search__img {
   margin-left: 2px;
   margin-top: 5px;
-
-  & path {
-    opacity: 0.2;
-  }
+  opacity: 0.2;
 }
 
 .search__text {

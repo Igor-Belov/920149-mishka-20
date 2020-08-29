@@ -20,13 +20,17 @@
   }
 }
 
+.copyright__img {
+  fill: $decoration-first;
+}
+
 .copyright__link {
-  &:hover path,
-  &:focus path {
+  &:hover .copyright__img,
+  &:focus .copyright__img {
     fill: $decoration-second;
   }
 
-  &:active path {
+  &:active .copyright__img {
     opacity: 0.3;
   }
 }

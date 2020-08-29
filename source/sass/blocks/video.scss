@@ -119,6 +119,7 @@
   background-color: transparent;
   background-size: cover;
   background-image: url("../img/video-mobile@1x.jpg");
+
   @media (min-resolution: 2dppx) {
     background-image: url("../img/video-mobile@2x.jpg");
   }
