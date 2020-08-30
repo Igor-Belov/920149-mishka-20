@@ -14,8 +14,9 @@
 .tel-input__input {
   width: 100%;
   padding-top: 10px;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
   border: none;
+  border-radius: none;
   border-bottom: 2px solid $text-first;
   background-color: inherit;
 
@@ -30,7 +31,7 @@
   &:hover,
   &:focus {
     outline: none;
-    box-shadow: inset 0 -2px 0 $decoration-first;
+    border-color: $decoration-first;
   }
 
   &:hover ~ .tel-input__img,
