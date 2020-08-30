@@ -16,8 +16,8 @@
   padding-top: 10px;
   padding-bottom: 12px;
   border: none;
-  border-radius: none;
   border-bottom: 2px solid $text-first;
+  border-radius: 0;
   background-color: inherit;
 
   @include font(normal, 19px, 18px, $text-main);
