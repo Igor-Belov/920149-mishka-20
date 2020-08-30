@@ -1,11 +1,11 @@
 .wishes-input {
   width: 100%;
   padding-top: 22px;
-  padding-bottom: 10px;
+  padding-bottom: 14px;
 
   @media (min-width: $size-tablet) {
     padding-top: 50px;
-    padding-bottom: 46px;
+    padding-bottom: 49px;
   }
 
   @media (min-width: $size-desktop) {
@@ -36,5 +36,6 @@
 
   @media (min-width: $size-tablet) {
     font-size: 19px;
+    line-height: 12px;
   }
 }

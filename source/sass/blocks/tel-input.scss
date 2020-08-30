@@ -13,7 +13,8 @@
 
 .tel-input__input {
   width: 100%;
-  height: 52px;
+  padding-top: 10px;
+  padding-bottom: 15px;
   border: none;
   box-shadow: inset 0 -2px 0 $text-first;
   background-color: inherit;
@@ -23,7 +24,7 @@
 
   @media (min-width: $size-tablet) {
     padding-left: 17px;
-    padding-bottom: 10px;
+    padding-bottom: 16px;
   }
 
   &:hover,
@@ -40,7 +41,7 @@
 }
 
 .tel-input__input::placeholder {
-  @include font(normal, 17px, 44px, $text-placeholder);
+  @include font(normal, 17px, 22px, $text-placeholder);
   font-family: "Open Sans", "Arial", sans-serif;
 
   @media (min-width: $size-tablet) {
@@ -50,7 +51,7 @@
 
 .tel-input__img {
   position: absolute;
-  bottom: 19px;
+  bottom: 17px;
   right: 8px;
   opacity: 0.2;
 
