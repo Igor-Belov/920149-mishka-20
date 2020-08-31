@@ -29,11 +29,11 @@
     box-shadow: 10px 0 0 0 white, -10px 0 0 0 white;
 
     @media (min-width: $size-tablet) {
-      box-shadow: 0 -10px 0 10px white;
+      box-shadow: 0 -15px 0 15px white;
     }
 
     @media (min-width: $size-desktop) {
-      box-shadow: -10px 0 0 10px white;
+      box-shadow: 1px 0 0 0 white, 0 0 0 1px $border-button-slider, -15px 0 0 15px white;
     }
   }
 
