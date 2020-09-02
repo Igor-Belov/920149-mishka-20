@@ -6,6 +6,7 @@
   &:focus .button-add-cart__img {
     opacity: 1;
     fill: $decoration-first;
+    pointer-events: none;
   }
 
   &:active {

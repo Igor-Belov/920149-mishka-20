@@ -109,6 +109,8 @@
 }
 
 .reviews__text {
+  display: block;
+  min-height: 90px;
   margin-bottom: 31px;
 
   @include font(normal, 15px, 30px, $text-main);

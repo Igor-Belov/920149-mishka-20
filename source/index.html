@@ -46,9 +46,8 @@
         </a>
         <button class="button-toggle-nav main-navigation__toggle js-button-toggle-nav" type="button"
           aria-label="открыть/закрыть меню навигации">
-          <span class="button-toggle-nav__img button-toggle-nav__img--open"></span>
         </button>
-        <ul class="site-list main-navigation__list-site">
+        <ul class="site-list main-navigation__list-site js-site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
@@ -150,7 +149,7 @@
           <div class="product-card__price-block">Цена:
             <span class="price-block__price">990</span>&nbsp;руб.
           </div>
-          <a class="button product-card__button">
+          <a class="button product-card__button js-buy">
             <span class="button__text">Заказать</span>
           </a>
         </article>
@@ -204,7 +203,7 @@
         <h2 class="reviews__title">Отзывы</h2>
         <div class="slider reviews__wrapper">
           <ul class="reviews__list slider__list">
-            <li class="reviews__item slider__item">
+            <li class="reviews__item slider__item slider__item--active">
               <blockquote class="reviews__article">
                 <p class="reviews__text">Я молодая мама, но&nbsp;всё&nbsp;равно фотографии не&nbsp;набирали
                   и&nbsp;близко такого количества
@@ -216,7 +215,7 @@
                 </cite>
               </blockquote>
             </li>
-            <li class="reviews__item slider__item visually-hidden">
+            <li class="reviews__item slider__item">
               <blockquote class="reviews__article">
                 <p class="reviews__text">Я старый дед! И при&nbsp;Александре&nbsp;II такой фигни не&nbsp;было!</p>
                 <cite class="reviews__author-name">Дед Похом
@@ -224,7 +223,7 @@
                 </cite>
               </blockquote>
             </li>
-            <li class="reviews__item slider__item visually-hidden">
+            <li class="reviews__item slider__item">
               <blockquote class="reviews__article">
                 <p class="reviews__text">Я люблю крафтовый квас и&nbsp;уход за&nbsp;бородой. Что я тут&nbsp;делаю?</p>
                 <cite class="reviews__author-name">Случайный прохожий
@@ -234,10 +233,10 @@
             </li>
           </ul>
           <div class="reviews__buttons-slider slider__buttons-slider">
-            <button class="slider__button js-button-slider" type="button" aria-label="Предыдущий отзыв">
+            <button class="slider__button" type="button" aria-label="Предыдущий отзыв">
               <span class="slider__button-img slider__button-img--backward"></span>
             </button>
-            <button class="slider__button js-button-slider" type="button" aria-label="Следующий отзыв">
+            <button class="slider__button" type="button" aria-label="Следующий отзыв">
               <span class="slider__button-img slider__button-img--forvard"></span>
             </button>
           </div>
@@ -267,6 +266,7 @@
         </dl>
       </div>
       <div class="contact__map">
+        <iframe class="contact__frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3Abfdb140565e739625c4419dca084667d5d465a419e6d28bf292dc9f7ba2901c2&amp;source=constructor" width="320" height="454"></iframe>
         <span class="visually-hidden">Карта с&nbsp;адрессом ул.&nbsp;Большая&nbsp;Конюшенная, д.&nbsp;19/8</span>
       </div>
       <div class="wrapper contact__button-box">
@@ -325,7 +325,7 @@
     </div>
   </footer>
 
-  <section class="form-size visually-hidden">
+  <section class="form-size">
     <div class="form-size__wrapper">
       <h2 class="form-size__title">Добавить в&nbsp;корзину</h2>
       <p class="form-size__text">Выберите размер:</p>
@@ -358,6 +358,9 @@
       </form>
     </div>
   </section>
+  <script src="js/main-menu.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/popup.js"></script>
 </body>
 
 </html>

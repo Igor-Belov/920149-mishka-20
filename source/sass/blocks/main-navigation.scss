@@ -1,4 +1,6 @@
 .main-navigation {
+  position: relative;
+
   @media (min-width: $size-tablet) {
     display: grid;
     grid-template-columns: min-content 1fr min-content min-content;
@@ -60,10 +62,22 @@
 }
 
 .main-navigation__toggle {
-  display: none;
+  position: absolute;
+  top: 28px;
+  right: 0;
+
+  @media (min-width: $size-tablet) {
+    display: none;
+  }
 }
 
 .main-navigation__list-site {
+  @media (max-width: $size-mobile-only) {
+    &--off {
+      display: none;
+    }
+  }
+
   @media (min-width: $size-tablet) {
     grid-column: 1/-2;
     grid-row: 2/3;

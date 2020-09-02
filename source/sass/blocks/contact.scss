@@ -198,6 +198,16 @@
   }
 }
 
+.contact__frame {
+  width: 100%;
+  height: 454px;
+  border: none;
+
+  @media (min-width: $size-tablet) {
+    height: 457px;
+  }
+}
+
 .contact__button-box {
   @media (min-width: $size-tablet) {
     display: flex;

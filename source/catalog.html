@@ -33,7 +33,7 @@
   <script src="../node_modules/pixel-glass/script.js"></script>
 </head>
 
-<body class="page__body">
+<body class="page__body js-catalog">
   <header class="page-header">
     <div class="wrapper">
       <nav class="main-navigation page-header__navigation">
@@ -49,7 +49,7 @@
           aria-label="открыть/закрыть меню навигации">
           <span class="button-toggle-nav__img button-toggle-nav__img--open"></span>
         </button>
-        <ul class="site-list main-navigation__list-site">
+        <ul class="site-list main-navigation__list-site js-site-list">
           <li class="site-list__item">
             <a class="site-list__link">Каталог товаров</a>
           </li>
@@ -121,7 +121,7 @@
               <p class="product-item__discription">Рост 30&nbsp;см, вес 200&nbsp;г</p>
               <div class="product-item__bottom">
                 <p class="product-item__price">1&nbsp;200</p>
-                <a class="product-item__button button-add-cart" href="#" aria-label="Добавить в корзину">
+                <a class="product-item__button button-add-cart js-buy" href="#" aria-label="Добавить в корзину">
                   <svg class="button-add-cart__img" width="20" height="19" viewBox="0 0 20 19">
                     <use xlink:href="img/sprite.svg#icon-cart" />
                   </svg>
@@ -154,7 +154,7 @@
               <p class="product-item__discription">Диаметр 15&nbsp;см, высота 10&nbsp;см</p>
               <div class="product-item__bottom">
                 <p class="product-item__price">690</p>
-                <a class="product-item__button button-add-cart" aria-label="Добавить в корзину">
+                <a class="product-item__button button-add-cart js-buy" aria-label="Добавить в корзину">
                   <svg class="button-add-cart__img" width="20" height="19" viewBox="0 0 20 19">
                     <use xlink:href="img/sprite.svg#icon-cart" />
                   </svg>
@@ -188,7 +188,7 @@
                 30&nbsp;см</p>
               <div class="product-item__bottom">
                 <p class="product-item__price">1&nbsp;500</p>
-                <a class="product-item__button button-add-cart" aria-label="Добавить в корзину">
+                <a class="product-item__button button-add-cart js-buy" aria-label="Добавить в корзину">
                   <svg class="button-add-cart__img" width="20" height="19" viewBox="0 0 20 19">
                     <use xlink:href="img/sprite.svg#icon-cart" />
                   </svg>
@@ -264,6 +264,43 @@
       </div>
     </div>
   </footer>
+
+  <section class="form-size">
+    <div class="form-size__wrapper">
+      <h2 class="form-size__title">Добавить в&nbsp;корзину</h2>
+      <p class="form-size__text">Выберите размер:</p>
+      <form class="form-size__form" action="https://echo.htmlacademy.ru/" method="get">
+        <ul class="form-size__list">
+          <li class="form-size__item">
+            <label class="form-size__label">
+              <input class="form-size__input visually-hidden" type="radio" name="size" value="s" checked>
+              <span class="form-size__img-input"></span>
+              <span class="form-size__label-input">s</span>
+            </label>
+          </li>
+          <li class="form-size__item">
+            <label class="form-size__label">
+              <input class="form-size__input visually-hidden" type="radio" name="size" value="m">
+              <span class="form-size__img-input"></span>
+              <span class="form-size__label-input">m</span>
+            </label>
+          <li class="form-size__item">
+            <label class="form-size__label">
+              <input class="form-size__input visually-hidden" type="radio" name="size" value="l">
+              <span class="form-size__img-input"></span>
+              <span class="form-size__label-input">l</span>
+            </label>
+          </li>
+        </ul>
+        <button class="form-size__button button button--popup">
+          <span class="button__text">Добавить</span>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <script src="js/main-menu.js"></script>
+  <script src="js/popup.js"></script>
 </body>
 
 </html>

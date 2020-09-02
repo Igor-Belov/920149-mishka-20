@@ -1,6 +1,14 @@
+.slider {
+  width: 100%;
+}
+
 .slider__buttons-slider {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
+
+  &--on {
+    display: flex;
+  }
 }
 
 .slider__button {
@@ -14,6 +22,16 @@
   background-color: $background-first;
   border: 1px solid $border-button-slider;
   cursor: pointer;
+
+  @media (min-width: $size-tablet) {
+    border: none;
+  }
+
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
 
   &:hover .slider__button-img,
   &:focus .slider__button-img {
@@ -43,5 +61,13 @@
 
   @media (min-width: $size-desktop) {
     margin-top: -11px;
+  }
+}
+
+.slider__item {
+  display: none;
+
+  &--active {
+    display: list-item;
   }
 }
