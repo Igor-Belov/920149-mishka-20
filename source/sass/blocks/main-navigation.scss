@@ -126,6 +126,10 @@
   @media (max-width: $size-mobile-only) {
     position: relative;
     height: 79px;
+
+    &--off {
+        display: none;
+    }
   }
 }
 
@@ -133,6 +137,12 @@
   position: relative;
 
   @include horizontal-line;
+
+  @media (max-width: $size-mobile-only) {
+    &--off {
+      display: none;
+    }
+  }
 
   @media (min-width: $size-tablet) {
     grid-column: -1/-2;
