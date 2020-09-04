@@ -5,31 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>Магазин вязанных вещей «Мишка»</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
-  <style>
-    html {
-      background: url("../img/Mobile-index.png") center 0 no-repeat;
-    }
-
-    @media (min-width: 768px) {
-      html {
-        background-image: url("../img/Tablet-index.png");
-      }
-    }
-
-    @media (min-width: 1150px) {
-      html {
-        background-image: url("../img/Desktop-index.png");
-      }
-    }
-
-    body {
-      opacity: 1;
-    }
-  </style>
-
-  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <script src="../node_modules/pixel-glass/script.js"></script>
 </head>
 
 <body class="page__body">
@@ -266,8 +244,8 @@
         </dl>
       </div>
       <div class="contact__map">
-        <iframe class="contact__frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3Abfdb140565e739625c4419dca084667d5d465a419e6d28bf292dc9f7ba2901c2&amp;source=constructor" width="320" height="454"></iframe>
-        <span class="visually-hidden">Карта с&nbsp;адрессом ул.&nbsp;Большая&nbsp;Конюшенная, д.&nbsp;19/8</span>
+        <iframe class="contact__frame" title="Карта с адрессом ул. Большая Конюшенная, д.19/8" src="https://yandex.ru/map-widget/v1/?um=constructor%3Abfdb140565e739625c4419dca084667d5d465a419e6d28bf292dc9f7ba2901c2&amp;source=constructor" width="320" height="454"></iframe>
+        <span class="visually-hidden">Карта с адрессом ул. Большая Конюшенная, д. 19/8</span>
       </div>
       <div class="wrapper contact__button-box">
         <a class="button contact__button" href="#">
@@ -358,9 +336,7 @@
       </form>
     </div>
   </section>
-  <script src="js/main-menu.js"></script>
-  <script src="js/slider.js"></script>
-  <script src="js/popup.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
