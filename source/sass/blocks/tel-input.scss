@@ -55,6 +55,7 @@
   bottom: 17px;
   right: 8px;
   opacity: 0.2;
+  pointer-events: none;
 
   @media (min-width: $size-tablet) {
     bottom: 18px;

@@ -3,13 +3,13 @@
 
   display: flex;
   flex-wrap: wrap;
-
-  & :not(:last-child) {
-    padding-right: 63px;
-  }
 }
 
 .promo-list__link {
+  display: block;
+  width: 220px;
+  padding-right: 10px;
+
   @include font-nav-second;
   text-decoration: none;
 

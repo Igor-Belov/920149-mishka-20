@@ -22,7 +22,7 @@
   font-family: "Open Sans", "Arial", sans-serif;
 
   @media (min-width: $size-tablet) {
-    padding-bottom: 12px;
+    padding-bottom: 10px;
     padding-left: 17px;
   }
 
@@ -54,6 +54,8 @@
   bottom: 9px;
   right: 3px;
   opacity: 0.2;
+  pointer-events: none;
+
 
   @media (min-width: $size-tablet) {
     right: 22px;

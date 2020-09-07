@@ -1,5 +1,5 @@
 .contact {
-  padding-top: 35px;
+  padding-top: 37px;
   padding-bottom: 39px;
 
   @media (min-width: $size-tablet) {
@@ -48,7 +48,7 @@
 
     &::after {
       position: absolute;
-      top: -20px;
+      top: -23px;
       right: 3px;
       display: block;
       width: 47px;
@@ -163,19 +163,21 @@
 
 .contact__map {
   width: 100%;
-  min-height: 457px;
-  margin-bottom: 39px;
+  min-height: 454px;
+  margin-bottom: 42px;
   background-color: $background-second;
   background-image: url("../img/icon-map-pin.svg"), url("../img/map-mobile@1x.jpg");
   background-size: 67px 100px, contain;
   background-repeat: no-repeat, no-repeat;
   background-position: 55% 146px, center;
+  line-height: 0;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/icon-map-pin.svg"), url("../img/map-mobile@2x.jpg");
   }
 
   @media (min-width: $size-tablet) {
+    min-height: 457px;
     margin-bottom: 55px;
     background-image: url("../img/icon-map-pin.svg"), url("../img/map-tablet@1x.jpg");
     background-position: 52% 141px, center;

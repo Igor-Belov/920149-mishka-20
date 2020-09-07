@@ -152,7 +152,7 @@
 }
 
 .reviews__buttons-slider {
-  margin-bottom: 38px;
+  margin-bottom: 35px;
 
   @media (min-width: $size-tablet) {
     position: absolute;
@@ -160,6 +160,10 @@
     bottom: 30px;
     margin: 0;
     width: 175px;
+  }
+
+  @media (min-width: $size-tablet) {
+    bottom: 27px;
   }
 }
 

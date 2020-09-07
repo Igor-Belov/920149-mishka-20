@@ -7,6 +7,10 @@
     align-items: center;
     padding-bottom: 24px;
   }
+
+  @media (min-width: $size-desktop) {
+    margin-left: 2px;
+  }
 }
 
 .name-input__input {
@@ -25,6 +29,10 @@
   @media (min-width: $size-tablet) {
     margin-left: 26px;
     padding-left: 17px;
+  }
+
+  @media (min-width: $size-desktop) {
+    margin-left: 24px;
   }
 
   &:hover,

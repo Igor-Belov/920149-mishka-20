@@ -23,6 +23,7 @@
   padding-top: 22px;
 
   @media (min-width: $size-tablet) {
+    left: -2px;
     width: 113px;
     height: 89px;
     grid-column: 1/2;

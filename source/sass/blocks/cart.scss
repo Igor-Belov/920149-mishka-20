@@ -36,6 +36,7 @@
 .cart__img {
   opacity: 0.2;
   margin-top: 5px;
+  flex-shrink: 0;
 
   .cart:hover & {
     opacity: 1;

@@ -119,7 +119,7 @@ exports.minjs = minjs;
 
 const clean = () => {
   return del("build");
- };
+}
 
 exports.clean = clean;
 

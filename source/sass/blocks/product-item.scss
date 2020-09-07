@@ -59,11 +59,11 @@
   flex-grow: 1;
   flex-direction: column;
   align-content: flex-start;
-  padding: 27px 32px 26px 28px;
+  padding: 27px 26px 26px 28px;
   border: 1px solid $background-header-line;
 
   &--big-title {
-    padding: 24px 32px 26px 27px;
+    padding: 24px 26px 24px 27px;
 
     @media (min-width: $size-tablet) {
       padding-top: 27px;
@@ -130,7 +130,8 @@
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
-  padding-top: 21px;
+
+  padding-top: 23px;
   border-top: 1px solid $background-header-line;
 
   @media (min-width: $size-tablet) {
@@ -155,9 +156,8 @@
 
 .product-item__button {
   margin-top: -10px;
-  margin-right: -6px;
 
   @media (min-width: $size-tablet) {
-    margin-right: 0;
+    margin-right: 6px;
   }
 }
