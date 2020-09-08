@@ -1,0 +1,29 @@
+.socials-list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22px;
+  padding-bottom: 20px;
+
+  @media (min-width: $size-tablet) {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.socials-list__item {
+  padding: 0 20px;
+}
+
+.socials-list__link {
+  &:hover .socials-list__img,
+  &:focus .socials-list__img {
+    fill: $decoration-second;
+  }
+
+  &:active .socials-list__img {
+    opacity: 0.3;
+  }
+}

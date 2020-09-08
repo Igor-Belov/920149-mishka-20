@@ -43,15 +43,9 @@
 }
 
 .page-footer__socials {
-  margin: 0;
-  margin-bottom: 22px;
-  padding: 0;
-  padding-bottom: 20px;
   border-bottom: 1px solid $background-footer-line;
 
   @media (min-width: $size-tablet) {
-    margin: 0;
-    padding: 0;
     border: none;
     flex-grow: 1;
   }

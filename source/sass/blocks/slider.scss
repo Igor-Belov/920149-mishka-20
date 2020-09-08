@@ -44,29 +44,13 @@
 }
 
 .slider__button-img {
-  display: block;
   width: 50px;
   height: 26px;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   margin-right: 3px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  &--forvard {
-    background-image: url("../img/icon-right-arrow.svg");
-  }
-
-  &--backward {
-    background-image: url("../img/icon-left-arrow.svg");
-  }
 
   @media (min-width: $size-tablet) {
     margin-right: 0;
-  }
-
-  @media (min-width: $size-desktop) {
-    margin-top: -11px;
   }
 }
 

@@ -43,16 +43,16 @@
 }
 
 .video__icon {
-  display: block;
+  // display: block;
   width: 32px;
   height: 32px;
   margin-left: 5px;
   margin-top: -5px;
   justify-self: center;
-  background-image: url("../img/icon-video.svg");
-  background-size: 32px 32px;
-  background-repeat: no-repeat;
-  background-position: center;
+  // background-image: url("../img/icon-video.svg");
+  // background-size: 32px 32px;
+  // background-repeat: no-repeat;
+  // background-position: center;
 
   @media (min-width: $size-tablet) {
     margin-top: 5px;

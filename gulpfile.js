@@ -108,7 +108,7 @@ const minjs = () => {
   base: "source"
   })
   .pipe(uglify(/* options */))
-  .pipe(concat('app.js'))
+  .pipe(concat("app.js"))
   .pipe(gulp.dest("build/js"))
   .pipe(sync.stream());
 }
@@ -128,7 +128,7 @@ exports.clean = clean;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,

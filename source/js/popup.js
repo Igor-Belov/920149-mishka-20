@@ -1,3 +1,7 @@
+let pagepopup = document.querySelector(".page-header");
+
+if (pagepopup.classList.contains("js-popup")) {
+
 let button_buy = document.querySelector(".js-buy");
 let target_zone = document.querySelector(".protucts-catalog__list");
 let popup = document.querySelector(".form-size");
@@ -35,3 +39,4 @@ popup.addEventListener("click", function (evt) {
     popup.classList.remove("form-size--on");
   }
 });
+};

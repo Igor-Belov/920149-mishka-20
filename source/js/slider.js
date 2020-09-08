@@ -1,3 +1,7 @@
+let pageslider = document.querySelector(".page-header");
+
+if (pageslider.classList.contains("js-slider")) {
+
 let buttons = document.querySelector(".slider__buttons-slider");
 let button_right = document.querySelector(".slider__button:nth-of-type(2)");
 let button_left = document.querySelector(".slider__button:nth-of-type(1)");
@@ -34,3 +38,4 @@ button_right.addEventListener("click", function () {
     slide.item(nslide).classList.add("slider__item--active") ;
   }
 });
+};

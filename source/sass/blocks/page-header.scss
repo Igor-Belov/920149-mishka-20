@@ -5,10 +5,10 @@
   @include font-nav;
 
   @media (min-width: $size-tablet) {
-    background-image: linear-gradient(transparent var(--height-background), rgba($logo, 0.1), $background-second var(--height-background) + 1px);
+    background-image: linear-gradient(transparent var(--height-background), rgba($logo, 0.1), $background-second calc(var(--height-background) + 1px));
 
     &--index {
-      background-image: linear-gradient(transparent var(--height-background), rgba($logo, 0.1), $background-main-image var(--height-background) + 1px);
+      background-image: linear-gradient(transparent var(--height-background), rgba($logo, 0.1), $background-main-image calc(var(--height-background) + 1px));
     }
   }
 }
